@@ -11,7 +11,7 @@ namespace Projeto_Keep_Walking
 {
 
 
-    public partial class WebForm1
+    public partial class frmCadMarcas
     {
 
         /// <summary>

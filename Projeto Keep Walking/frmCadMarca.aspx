@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="Projeto_Keep_Walking.WebForm1" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="frmCadMarca.aspx.cs" Inherits="Projeto_Keep_Walking.frmCadMarcas" %>
 
 <!DOCTYPE html>
 
