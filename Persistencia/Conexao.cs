@@ -16,7 +16,7 @@ namespace Persistencia
         {
                cn.ConnectionString = "Data Source=localhost;" +
                "Integrated Security=SSPI;" +
-               "Initial Catalog=BDLP2015";
+               "Initial Catalog=ProjetoKeepWalking";
                cn.Open();
         }
 
