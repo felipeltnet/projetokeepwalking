@@ -10,5 +10,6 @@ namespace Negocio
     {
         String nome;
         String idade;
+        String teste;
     }
 }
