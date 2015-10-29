@@ -9,5 +9,6 @@ namespace Negocio
     class Class2
     {
         String nome;
+        String idade;
     }
 }
