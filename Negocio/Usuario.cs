@@ -7,9 +7,8 @@ using Persistencia;
 
 namespace Negocio
 {
-    class Usuario
+    public class Usuario
     {
-        int idUsuario;
         String email;
         String senha;
         String nome;
@@ -24,10 +23,11 @@ namespace Negocio
         int cep;
         int ddd;
 
-        public void adicionar(String email, String senha, String nome)
+        public void adicionar(String email, String senha, String nome, int cpf, String sexo, DateTime dataNascimento,
+                            int ddd, int telefone, String cidade, String estado, String endereco, String complemento, int cep)
         {
             pUsuario objUsuario = new pUsuario();
-            objUsuario.adicionar(email, senha, nome);
+            objUsuario.adicionar(email, senha, nome, cpf, sexo, dataNascimento, ddd, telefone, cidade, estado, endereco, complemento, cep);
         }
         public void alterar()
         {

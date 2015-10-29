@@ -9,15 +9,27 @@ namespace Persistencia
     public class pUsuario
     {
         String email;
-        String nome;
         String senha;
+        String nome;
+        int cpf;
+        String sexo;
+        DateTime dataNascimento;
+        int telefone;
+        String cidade;
+        String estado;
+        String endereco;
+        String complemento;
+        int cep;
+        int ddd;
 
-        public void adicionar(String email, String senha, String nome)
+        public void adicionar(String email, String senha, String nome, int cpf, String sexo, DateTime dataNascimento,
+                            int ddd, int telefone, String cidade, String estado, String endereco, String complemento, int cep)
         {
-            String SQL = "INSERT INTO () VALUES()";
-            Conexao oConexao = new Conexao("SQLServer");
-            oConexao.executeNoQuery(SQL);
-            oConexao.fechaConexao();
+            String SQL = "INSERT INTO Usuario(email, senha, nome, cpf, sexo, dataNascimento, ddd, telefone, cidade, estado, endereco, complemento, cep) VALUES('"+ email +"," + senha + "," + 
+                        nome + "," + cpf + "," + sexo + "," + dataNascimento + "," + ddd + "," + telefone + "," + cidade + "," + estado + "," + endereco + "," + complemento + "," + cep + "')";
+            Conexao objConexao = new Conexao("SQLServer");
+            objConexao.executeNoQuery(SQL);
+            objConexao.fechaConexao();
         }
         public void alterar()
         {
