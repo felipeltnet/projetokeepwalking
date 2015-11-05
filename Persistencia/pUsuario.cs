@@ -42,7 +42,7 @@ namespace Persistencia
             objConexao.executeNoQuery(SQL);
             objConexao.fechaConexao();
         }
-        public String consultar()
+        public String consultar(String email, String senha)
         {
             return "";
         }
