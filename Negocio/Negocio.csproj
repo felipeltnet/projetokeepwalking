@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="Marca.cs" />
     <Compile Include="Mensagem.cs" />
+    <Compile Include="Modelo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Usuario.cs" />
   </ItemGroup>
