@@ -11,11 +11,10 @@ namespace Persistencia
     {
         String assunto;
         String mensagem;
-        String usuario;
 
-        public void adicionar(String mensagem, String assunto, String usuario)
+        public void adicionar(String mensagem, String assunto)
         {
-            String SQL = "INSERT INTO Mensagem(usuario, assunto, mensagem) VALUES('"+ usuario +","+ assunto +","+ mensagem +"')";
+            String SQL = "INSERT INTO Mensagem(idUsuario, assunto, mensagem) VALUES(1, '"+ assunto +"','"+ mensagem +"')";
             Conexao oConexao = new Conexao("SQLServer");
             oConexao.executeNoQuery(SQL);
             oConexao.fechaConexao();

@@ -3,20 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Persistencia;
 
 namespace Negocio
 {
     public class Mensagem
     {
-        int idFale;
-        int idUsuario;
         String assunto;
         String mensagem;
 
-        public void adicionar(String assunto, String mensagem, String usuario) 
+        public void adicionar(String assunto, String mensagem) 
         {
-            Mensagem pMensagem = new Mensagem();
-            pMensagem.adicionar(usuario, mensagem, assunto);
+            pMensagem objMensagem = new pMensagem();
+            objMensagem.adicionar(mensagem, assunto);
         }
         public void deletar()
         { }

@@ -13,7 +13,7 @@ namespace Persistencia
 
         public void inserir(String descricao)
         {
-            String SQL = "INSERT INTO Modelo(descricao) VALUES ('" + descricao+"')";
+            String SQL = "INSERT INTO Modelo(idMarca, descricao) VALUES (1, '" + descricao+"')";
             Conexao oConexao = new Conexao("SQLServer");
             oConexao.executeNoQuery(SQL);
             oConexao.fechaConexao();

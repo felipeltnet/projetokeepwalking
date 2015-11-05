@@ -18,8 +18,8 @@ namespace Projeto_Keep_Walking
 
         protected void btnEnviar_Click(object sender, EventArgs e)
         {
-            Mensagem objMensgem = new Mensagem();
-            objMensgem.adicionar(txtUsuario.Text, txtMensagem.Text, txtAssunto.Text);
+            Mensagem objMensagem = new Mensagem();
+            objMensagem.adicionar(txtMensagem.Text, txtAssunto.Text);
         }
     }
 }
