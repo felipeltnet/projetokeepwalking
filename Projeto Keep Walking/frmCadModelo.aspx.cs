@@ -18,7 +18,7 @@ namespace WebAppExercicio
         protected void btnInserir_Click(object sender, EventArgs e)
         {
             Modelo objModelo = new Modelo();
-            objModelo.inserir(txtModelo.Text, txtMarca.Text, txtDescricao.Text);
+            objModelo.inserir(txtDescricao.Text);
 
         }
     }

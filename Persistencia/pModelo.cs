@@ -9,13 +9,11 @@ namespace Persistencia
 {
     public class pModelo
     {
-        String modelo;
-        String marca;
         String descricao;
 
-        public void inserir(String modelo, String marca, String descricao)
+        public void inserir(String descricao)
         {
-            String SQL = "INSERT INTO Modelo(modelo, marca, descricao) VALUES (" + modelo +", '" + marca + "', '" + descricao+"')";
+            String SQL = "INSERT INTO Modelo(descricao) VALUES ('" + descricao+"')";
             Conexao oConexao = new Conexao("SQLServer");
             oConexao.executeNoQuery(SQL);
             oConexao.fechaConexao();
