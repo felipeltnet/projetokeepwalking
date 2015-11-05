@@ -59,6 +59,7 @@
   <ItemGroup>
     <Content Include="frmCadMarca.aspx" />
     <Content Include="frmCadUsuario.aspx" />
+    <Content Include="frmMensagem.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -75,6 +76,13 @@
     </Compile>
     <Compile Include="frmCadUsuario.aspx.designer.cs">
       <DependentUpon>frmCadUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmMensagem.aspx.cs">
+      <DependentUpon>frmMensagem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmMensagem.aspx.designer.cs">
+      <DependentUpon>frmMensagem.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
