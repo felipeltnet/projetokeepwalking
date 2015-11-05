@@ -14,7 +14,7 @@ namespace Persistencia
 
         public void adicionar(String mensagem, String assunto)
         {
-            String SQL = "INSERT INTO Mensagem(idUsuario, assunto, mensagem) VALUES(1, '"+ assunto +"','"+ mensagem +"')";
+            String SQL = "INSERT INTO Mensagem(idUsuario, assunto, mensagem) VALUES(2, '"+ assunto +"','"+ mensagem +"')";
             Conexao oConexao = new Conexao("SQLServer");
             oConexao.executeNoQuery(SQL);
             oConexao.fechaConexao();

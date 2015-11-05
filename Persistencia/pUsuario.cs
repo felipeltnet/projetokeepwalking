@@ -25,8 +25,8 @@ namespace Persistencia
         public void adicionar(String email, String senha, String nome, String cpf, String sexo, String dataNascimento,
                             String ddd, String telefone, String cidade, String estado, String endereco, String complemento, String cep)
         {
-            String SQL = "INSERT INTO Usuario(email, senha, nome, cpf, sexo, dataNascimento, ddd, telefone, cidade, estado, endereco, complemento, cep) VALUES('"+ email +"," + senha + "," + 
-                        nome + "," + cpf + "," + sexo + "," + dataNascimento + "," + ddd + "," + telefone + "," + cidade + "," + estado + "," + endereco + "," + complemento + "," + cep + "')";
+            String SQL = "INSERT INTO Usuario(email, senha, nome, cpf, sexo, dataNascimento, ddd, telefone, cidade, estado, endereco, complemento, cep) VALUES('"+ email +"','" + senha + "','" + 
+                        nome + "','" + cpf + "','" + sexo + "','" + dataNascimento + "','" + ddd + "','" + telefone + "','" + cidade + "','" + estado + "','" + endereco + "','" + complemento + "','" + cep + "')";
             Conexao objConexao = new Conexao("SQLServer");
             objConexao.executeNoQuery(SQL);
             objConexao.fechaConexao();
