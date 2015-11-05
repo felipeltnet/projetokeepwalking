@@ -22,5 +22,11 @@ namespace Projeto_Keep_Walking
                                 Convert.ToInt16(txtDDD), Convert.ToInt16(txtTelefone), txtCidade.Text, txtEstado.Text, txtEndereco.Text, txtComplemento.Text,
                                 Convert.ToInt16(txtCEP));
         }
+
+        protected void btnDeletar_Click(object sender, EventArgs e)
+        {
+            Usuario objUsuario = new Usuario();
+            objUsuario.deletar(txtEmail.Text, txtSenha.Text);
+        }
     }
 }

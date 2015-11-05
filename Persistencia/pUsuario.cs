@@ -35,9 +35,12 @@ namespace Persistencia
         {
 
         }
-        public void deletar()
+        public void deletar(String email, String senha)
         {
-
+            String SQL = "DELETE FROM Usuario WHERE email = '" + email + "' AND senha = '" + senha + "'";
+            Conexao objConexao = new Conexao("SQLServer");
+            objConexao.executeNoQuery(SQL);
+            objConexao.fechaConexao();
         }
         public String consultar()
         {
