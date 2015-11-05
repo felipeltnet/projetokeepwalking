@@ -11,19 +11,19 @@ namespace Persistencia
         String email;
         String senha;
         String nome;
-        int cpf;
+        String cpf;
         String sexo;
-        DateTime dataNascimento;
-        int telefone;
+        String dataNascimento;
+        String telefone;
         String cidade;
         String estado;
         String endereco;
         String complemento;
-        int cep;
-        int ddd;
+        String cep;
+        String ddd;
 
-        public void adicionar(String email, String senha, String nome, int cpf, String sexo, DateTime dataNascimento,
-                            int ddd, int telefone, String cidade, String estado, String endereco, String complemento, int cep)
+        public void adicionar(String email, String senha, String nome, String cpf, String sexo, String dataNascimento,
+                            String ddd, String telefone, String cidade, String estado, String endereco, String complemento, String cep)
         {
             String SQL = "INSERT INTO Usuario(email, senha, nome, cpf, sexo, dataNascimento, ddd, telefone, cidade, estado, endereco, complemento, cep) VALUES('"+ email +"," + senha + "," + 
                         nome + "," + cpf + "," + sexo + "," + dataNascimento + "," + ddd + "," + telefone + "," + cidade + "," + estado + "," + endereco + "," + complemento + "," + cep + "')";
