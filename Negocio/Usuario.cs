@@ -33,9 +33,10 @@ namespace Negocio
         {
 
         }
-        public void deletar()
+        public void deletar(String email, String senha)
         {
-
+            pUsuario objUsuario = new pUsuario();
+            objUsuario.deletar(email, senha);
         }
         public String consultar()
         {
