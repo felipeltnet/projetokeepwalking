@@ -6,29 +6,28 @@ using System.Threading.Tasks;
 
 namespace Persistencia
 {
-    public class pRegiao
+    public class pNewsLetter
     {
-        String nomeRegiao;
+        String email;
 
-        public void inserir(String nomeRegiao)
+        public void adicionar(String email)
         {
-            String SQL = "INSERT INTO Regiao(nomeRegiao) VALUES ('" + nomeRegiao + "')";
+            String SQL = "INSERT INTO NewsLetter(email) VALUES('" + email +"')";
             Conexao oConexao = new Conexao("SQLServer");
             oConexao.executeNoQuery(SQL);
             oConexao.fechaConexao();
-
         }
-        public void alterar(String nomeRegiao)
+        public void alterar()
         {
 
         }
-        public void deletar(String nomeRegiao)
+        public void deletar()
         {
 
         }
-        public void consultar(String nomeRegiao)
+        public String consultar()
         {
-
+            return "";
         }
     }
 }
