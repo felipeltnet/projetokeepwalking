@@ -13,7 +13,7 @@ namespace Persistencia
 
         public void adicionar(String estado)
         {
-            String SQL = "INSERT INTO Estado(idRegiao, estado) VALUES(1 '" + estado + "')";
+            String SQL = "INSERT INTO Estado(idRegiao, estado) VALUES(1, '" + estado + "')";
             Conexao oConexao = new Conexao("SQLServer");
             oConexao.executeNoQuery(SQL);
             oConexao.fechaConexao();
