@@ -60,6 +60,7 @@
     <Content Include="frmCadEstado.aspx" />
     <Content Include="frmCadMarca.aspx" />
     <Content Include="frmCadModelo.aspx" />
+    <Content Include="frmCadPatrocinador.aspx" />
     <Content Include="frmCadRegiao.aspx" />
     <Content Include="frmCadUsuario.aspx" />
     <Content Include="frmLogUsuario.aspx" />
@@ -88,6 +89,13 @@
     </Compile>
     <Compile Include="frmCadModelo.aspx.designer.cs">
       <DependentUpon>frmCadModelo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadPatrocinador.aspx.cs">
+      <DependentUpon>frmCadPatrocinador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCadPatrocinador.aspx.designer.cs">
+      <DependentUpon>frmCadPatrocinador.aspx</DependentUpon>
     </Compile>
     <Compile Include="frmCadUsuario.aspx.cs">
       <DependentUpon>frmCadUsuario.aspx</DependentUpon>
