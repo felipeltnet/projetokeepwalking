@@ -63,6 +63,7 @@
     <Content Include="frmCadUsuario.aspx" />
     <Content Include="frmLogUsuario.aspx" />
     <Content Include="frmMensagem.aspx" />
+    <Content Include="frmNewsLetter.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -107,6 +108,13 @@
     </Compile>
     <Compile Include="frmMensagem.aspx.designer.cs">
       <DependentUpon>frmMensagem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmNewsLetter.aspx.cs">
+      <DependentUpon>frmNewsLetter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmNewsLetter.aspx.designer.cs">
+      <DependentUpon>frmNewsLetter.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
