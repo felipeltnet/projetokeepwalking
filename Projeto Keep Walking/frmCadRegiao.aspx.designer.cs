@@ -7,10 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebAppExercicio {
+namespace Projeto_Keep_Walking {
     
     
-    public partial class frmCadModelo {
+    public partial class frmCadRegiao {
         
         /// <summary>
         /// form1 control.
@@ -22,22 +22,22 @@ namespace WebAppExercicio {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// Label6 control.
+        /// Label1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label6;
+        protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
-        /// txtDescricao control.
+        /// txtRegiao control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtDescricao;
+        protected global::System.Web.UI.WebControls.TextBox txtRegiao;
         
         /// <summary>
         /// btnAdicionar control.

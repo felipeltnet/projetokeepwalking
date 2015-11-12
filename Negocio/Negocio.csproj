@@ -43,6 +43,7 @@
     <Compile Include="Mensagem.cs" />
     <Compile Include="Modelo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Regiao.cs" />
     <Compile Include="Estado.cs" />
     <Compile Include="Usuario.cs" />
   </ItemGroup>
