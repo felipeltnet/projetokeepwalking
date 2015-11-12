@@ -59,6 +59,7 @@
   <ItemGroup>
     <Content Include="frmCadMarca.aspx" />
     <Content Include="frmCadModelo.aspx" />
+    <Content Include="frmCadEstado.aspx" />
     <Content Include="frmCadUsuario.aspx" />
     <Content Include="frmLogUsuario.aspx" />
     <Content Include="frmMensagem.aspx" />
@@ -79,6 +80,13 @@
     <Compile Include="frmCadModelo.aspx.designer.cs">
       <DependentUpon>frmCadModelo.aspx</DependentUpon>
     </Compile>
+    <Compile Include="frmCadEstado.aspx.cs">
+      <DependentUpon>frmCadEstado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCadEstado.aspx.designer.cs">
+      <DependentUpon>frmCadEstado.aspx</DependentUpon>
+    </Compile>
     <Compile Include="frmCadUsuario.aspx.cs">
       <DependentUpon>frmCadUsuario.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -88,6 +96,7 @@
     </Compile>
     <Compile Include="frmLogUsuario.aspx.cs">
       <DependentUpon>frmLogUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="frmLogUsuario.aspx.designer.cs">
       <DependentUpon>frmLogUsuario.aspx</DependentUpon>
