@@ -6,14 +6,13 @@ using System.Threading.Tasks;
 
 namespace Persistencia
 {
-     public class pEstado
+    public class pNewsLetter
     {
+        String email;
 
-        String estado;
-
-        public void adicionar(String estado)
+        public void adicionar(String email)
         {
-            String SQL = "INSERT INTO Estado(idRegiao, estado) VALUES(1, '" + estado + "')";
+            String SQL = "INSERT INTO NewsLetter(email) VALUES('" + email +"')";
             Conexao oConexao = new Conexao("SQLServer");
             oConexao.executeNoQuery(SQL);
             oConexao.fechaConexao();
