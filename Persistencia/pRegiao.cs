@@ -12,7 +12,7 @@ namespace Persistencia
 
         public void inserir(String nomeRegiao)
         {
-            String SQL = "INSERT INTO Regiao(idRegiao, nomeRegiao) VALUES (1, '" + nomeRegiao + "')";
+            String SQL = "INSERT INTO Regiao(nomeRegiao) VALUES ('" + nomeRegiao + "')";
             Conexao oConexao = new Conexao("SQLServer");
             oConexao.executeNoQuery(SQL);
             oConexao.fechaConexao();
