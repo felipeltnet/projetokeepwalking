@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.SqlClient;
+using System.Data;
 
 namespace Persistencia
 {
@@ -42,9 +44,18 @@ namespace Persistencia
             objConexao.executeNoQuery(SQL);
             objConexao.fechaConexao();
         }
-        public String consultar(String email, String senha)
+        public DataSet consultar()
         {
-            return "";
+            String SQL = "SELECT * FROM Usuario";
+
+            Conexao objConexao = new Conexao("SQLServer");
+
+            SqlDataAdapter adapter = new SqlDataAdapter(SQL, objConexao.cn);
+            DataSet ds = new DataSet("Tabela");
+            adapter.Fill(ds, "Tabela");
+
+            objConexao.fechaConexao();
+            return ds;
         }
     }
 }

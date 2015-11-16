@@ -14,11 +14,5 @@ namespace Projeto_Keep_Walking
         {
 
         }
-
-        protected void btnOk_Click(object sender, EventArgs e)
-        {
-            Usuario objConUsuario = new Usuario();
-            objConUsuario.consultar(txtEmail.Text, txtSenha.Text);
-        }      
     }
 }
