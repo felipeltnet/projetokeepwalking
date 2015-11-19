@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Persistencia;
+using System.Data;
 
 namespace Negocio
 {
@@ -24,9 +25,10 @@ namespace Negocio
         {
 
         }
-        public void consultar(String nomeRegiao)
+        public DataSet consultar()
         {
-
+            pRegiao objRegiao = new pRegiao();
+            return objRegiao.consultar();
         }
     }
 }
