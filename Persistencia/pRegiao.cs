@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.SqlClient;
+using System.Data;
 
 namespace Persistencia
 {
@@ -26,9 +28,15 @@ namespace Persistencia
         {
 
         }
-        public void consultar(String nomeRegiao)
+        public DataSet consultar()
         {
-
+            String SQL = "SELECT * FROM Regiao";
+            Conexao oConexao = new Conexao("SQLServer");
+            SqlDataAdapter adapter = new SqlDataAdapter(SQL, oConexao.cn);
+            DataSet ds = new DataSet("Tabela");
+            adapter.Fill(ds, "Tabela");
+            oConexao.fechaConexao();
+            return ds;
         }
     }
 }
