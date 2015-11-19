@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="pCategoria.cs" />
     <Compile Include="Conexao.cs" />
+    <Compile Include="pCores.cs" />
     <Compile Include="pEstado.cs" />
     <Compile Include="pMensagem.cs" />
     <Compile Include="pMarca.cs" />

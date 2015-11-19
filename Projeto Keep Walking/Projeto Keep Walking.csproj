@@ -57,6 +57,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="frmCadCores.aspx" />
     <Content Include="frmCadEstado.aspx" />
     <Content Include="frmCadCategoria.aspx" />
     <Content Include="frmCadMarca.aspx" />
@@ -71,6 +72,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmCadCores.aspx.cs">
+      <DependentUpon>frmCadCores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCadCores.aspx.designer.cs">
+      <DependentUpon>frmCadCores.aspx</DependentUpon>
+    </Compile>
     <Compile Include="frmCadMarca.aspx.cs">
       <DependentUpon>frmCadMarca.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
