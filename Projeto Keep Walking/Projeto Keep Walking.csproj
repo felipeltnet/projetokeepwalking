@@ -62,12 +62,13 @@
     <Content Include="frmCadEstado.aspx" />
     <Content Include="frmCadMarca.aspx" />
     <Content Include="frmCadModelo.aspx" />
-    <Content Include="frmCadPatrocinador.aspx" />
     <Content Include="frmCadRegiao.aspx" />
     <Content Include="frmCadUsuario.aspx" />
     <Content Include="frmLogUsuario.aspx" />
     <Content Include="frmMensagem.aspx" />
     <Content Include="frmNewsLetter.aspx" />
+    <Content Include="frmOpcionais.aspx" />
+    <Content Include="frmPatrocinador.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -99,13 +100,6 @@
     <Compile Include="frmCadModelo.aspx.designer.cs">
       <DependentUpon>frmCadModelo.aspx</DependentUpon>
     </Compile>
-    <Compile Include="frmCadPatrocinador.aspx.cs">
-      <DependentUpon>frmCadPatrocinador.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="frmCadPatrocinador.aspx.designer.cs">
-      <DependentUpon>frmCadPatrocinador.aspx</DependentUpon>
-    </Compile>
     <Compile Include="frmCadUsuario.aspx.cs">
       <DependentUpon>frmCadUsuario.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -133,6 +127,20 @@
     </Compile>
     <Compile Include="frmNewsLetter.aspx.designer.cs">
       <DependentUpon>frmNewsLetter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmOpcionais.aspx.cs">
+      <DependentUpon>frmOpcionais.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmOpcionais.aspx.designer.cs">
+      <DependentUpon>frmOpcionais.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmPatrocinador.aspx.cs">
+      <DependentUpon>frmPatrocinador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmPatrocinador.aspx.designer.cs">
+      <DependentUpon>frmPatrocinador.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
