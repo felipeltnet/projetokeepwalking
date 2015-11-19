@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
 using Persistencia;
 
 namespace Negocio
@@ -22,9 +23,10 @@ namespace Negocio
         public void alterar()
         {
         }
-        public String consultar()
+        public DataSet consultar()
         {
-            return "";
+            pCategoria objCategoria = new pCategoria();
+            return objCategoria.consultar();
         }
     }
 }

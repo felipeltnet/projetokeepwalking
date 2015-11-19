@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.SqlClient;
+using System.Data;
 
 namespace Persistencia
 {
@@ -23,9 +25,19 @@ namespace Persistencia
         public void alterar()
         {
         }
-        public String consultar()
+        public DataSet consultar()
         {
-            return "";
+            String SQL = "SELECT * FROM Categoria";
+
+            Conexao objConexao = new Conexao("SQLServer");
+
+            SqlDataAdapter adapter = new SqlDataAdapter(SQL, objConexao.cn);
+            DataSet ds = new DataSet("Tabela");
+            adapter.Fill(ds, "Tabela");
+
+            objConexao.fechaConexao();
+
+            return ds;
         }
     }
 }

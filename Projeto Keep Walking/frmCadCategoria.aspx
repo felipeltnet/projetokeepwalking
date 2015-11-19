@@ -14,9 +14,11 @@
         <asp:TextBox ID="txtNomeCategoria" runat="server"></asp:TextBox>
         <br />
         <asp:Button ID="btnAdicionar" runat="server" OnClick="btnAdicionar_Click" Text="Adicionar" />
-        <asp:Button ID="btnAlterar" runat="server" Text="Alterar" />
+        <asp:Button ID="btnAlterar" runat="server" OnClick="Button2_Click" Text="Alterar" Width="56px" />
         <asp:Button ID="btnDeletar" runat="server" Text="Deletar" />
-        <asp:Button ID="btnConsultar" runat="server" Text="Consultar" />
+        <asp:Button ID="btnConsultar" runat="server" OnClick="btnConsultar_Click" Text="Consultar" />
+        <asp:GridView ID="gdvCategoria" runat="server" AllowPaging="True">
+        </asp:GridView>
     
     </div>
     </form>

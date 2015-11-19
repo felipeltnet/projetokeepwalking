@@ -4,21 +4,39 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data;
 using Negocio;
 
 namespace Projeto_Keep_Walking
 {
     public partial class frmCadCategoria : System.Web.UI.Page
     {
+        DataSet lista;
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!Page.IsPostBack)
+            {
+                Categoria objCategoria = new Categoria();
+                lista = objCategoria.consultar();
 
+                if (lista != null)
+                {
+                    gdvCategoria.DataSource = lista;
+                    gdvCategoria.DataMember = "Tabela";
+                    gdvCategoria.DataBind();
+                }
+            }
         }
 
         protected void btnAdicionar_Click(object sender, EventArgs e)
         {
             Categoria objCategoria = new Categoria();
             objCategoria.adicionar(txtNomeCategoria.Text);
+        }
+
+        protected void btnConsultar_Click(object sender, EventArgs e)
+        {
+             
         }
     }
 }

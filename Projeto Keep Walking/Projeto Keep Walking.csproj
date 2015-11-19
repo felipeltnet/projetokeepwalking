@@ -57,9 +57,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="frmCadCategoria.aspx" />
     <Content Include="frmCadCores.aspx" />
     <Content Include="frmCadEstado.aspx" />
-    <Content Include="frmCadCategoria.aspx" />
     <Content Include="frmCadMarca.aspx" />
     <Content Include="frmCadModelo.aspx" />
     <Content Include="frmCadPatrocinador.aspx" />
@@ -71,6 +71,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmCadCategoria.aspx.cs">
+      <DependentUpon>frmCadCategoria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCadCategoria.aspx.designer.cs">
+      <DependentUpon>frmCadCategoria.aspx</DependentUpon>
+    </Compile>
     <Compile Include="frmCadCores.aspx.cs">
       <DependentUpon>frmCadCores.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
