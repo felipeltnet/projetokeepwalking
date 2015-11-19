@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Persistencia;
+using System.Data;
 
 namespace Negocio
 {
@@ -38,9 +39,10 @@ namespace Negocio
             pUsuario objUsuario = new pUsuario();
             objUsuario.deletar(email, senha);
         }
-        public String consultar(String email, String senha)
+        public DataSet consultar()
         {
-            return "";
+            pUsuario objUsuario = new pUsuario();
+            return objUsuario.consultar();
         }
     }
 

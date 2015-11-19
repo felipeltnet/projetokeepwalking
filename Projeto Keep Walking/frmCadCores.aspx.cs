@@ -8,11 +8,17 @@ using Negocio;
 
 namespace Projeto_Keep_Walking
 {
-    public partial class frmLogUsuario : System.Web.UI.Page
+    public partial class frmCadCores : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
+        }
+
+        protected void btnCadastrar_Click(object sender, EventArgs e)
+        {
+            Cores objCores = new Cores();
+            objCores.adicionar(txtNomeCor.Text);
         }
     }
 }
