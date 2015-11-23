@@ -17,11 +17,15 @@ namespace Negocio
             pPatrocinador objPatrocinador = new pPatrocinador();
             objPatrocinador.adicionar(nomePatrocinador);
         }
-        public void deletar()
+        public void deletar(String idPatrocinador)
         {
+            pPatrocinador objPatrocinador = new pPatrocinador();
+            objPatrocinador.deletar(idPatrocinador);
         }
-        public void alterar()
+        public void alterar(String idPatrocinador,String nomePatrocinador)
         {
+            pPatrocinador objPatrocinador = new pPatrocinador();
+            objPatrocinador.alterar(idPatrocinador, nomePatrocinador);
         }
         public String consultar()
         {
