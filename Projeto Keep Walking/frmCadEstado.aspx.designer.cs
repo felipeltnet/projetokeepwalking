@@ -40,6 +40,15 @@ namespace Projeto_Keep_Walking {
         protected global::System.Web.UI.WebControls.TextBox txtEstado;
         
         /// <summary>
+        /// lblEstado control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblEstado;
+        
+        /// <summary>
         /// btnAdicionar control.
         /// </summary>
         /// <remarks>
@@ -74,5 +83,14 @@ namespace Projeto_Keep_Walking {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnConsultar;
+        
+        /// <summary>
+        /// gdvEstado control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gdvEstado;
     }
 }

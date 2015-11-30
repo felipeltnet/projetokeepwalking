@@ -86,6 +86,13 @@
     <Compile Include="frmCadCores.aspx.designer.cs">
       <DependentUpon>frmCadCores.aspx</DependentUpon>
     </Compile>
+    <Compile Include="frmCadEstado.aspx.cs">
+      <DependentUpon>frmCadEstado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCadEstado.aspx.designer.cs">
+      <DependentUpon>frmCadEstado.aspx</DependentUpon>
+    </Compile>
     <Compile Include="frmCadMarca.aspx.cs">
       <DependentUpon>frmCadMarca.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -99,6 +106,13 @@
     </Compile>
     <Compile Include="frmCadModelo.aspx.designer.cs">
       <DependentUpon>frmCadModelo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadRegiao.aspx.cs">
+      <DependentUpon>frmCadRegiao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCadRegiao.aspx.designer.cs">
+      <DependentUpon>frmCadRegiao.aspx</DependentUpon>
     </Compile>
     <Compile Include="frmCadUsuario.aspx.cs">
       <DependentUpon>frmCadUsuario.aspx</DependentUpon>

@@ -4,14 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Persistencia;
+using System.Data;
 
 namespace Negocio
 {
      public class Patrocinador
-    {
-        String nomePatrocinador;
-
-
+    {        
         public void adicionar(String nomePatrocinador)
         {
             pPatrocinador objPatrocinador = new pPatrocinador();
@@ -27,9 +25,10 @@ namespace Negocio
             pPatrocinador objPatrocinador = new pPatrocinador();
             objPatrocinador.alterar(idPatrocinador, nomePatrocinador);
         }
-        public String consultar()
+        public DataSet consultar()
         {
-            return "";
+            pPatrocinador objPatrocinador = new pPatrocinador();
+            return objPatrocinador.consultar();
         }
     }
 }

@@ -13,22 +13,33 @@ namespace Projeto_Keep_Walking
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if(!Page.IsPostBack)
-            {
-                Regiao oRegiao = new Regiao();
-                lista = oRegiao.consultar();
-                if(lista != null)                
-                {
-                    gdvRegiao.DataSource = lista;
-                    gdvRegiao.DataMember = "Tabela";
-                    gdvRegiao.DataBind();
-                }
-            }
+
         }
-        protected void btnInserir_Click(object sender, EventArgs e)
+
+        protected void btnAdicionar_Click1(object sender, EventArgs e)
         {
             Regiao objRegiao = new Regiao();
-            objRegiao.inserir(txtRegiao.Text);
+            objRegiao.adicionar(txtRegiao.Text);
         }
+                   
+        protected void btnDeletar_Click1(object sender, EventArgs e)
+        {
+            Regiao objRegiao = new Regiao();
+            objRegiao.deletar(lblRegiao.Text);
+            Response.Redirect(Request.RawUrl);
+        }
+
+        protected void btnAlterar_Click1(object sender, EventArgs e)
+        {
+            Regiao objRegiao = new Regiao();
+            objRegiao.alterar(lblRegiao.Text, txtRegiao.Text);
+        }
+
+        protected void gdvRegiao_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            GridViewRow row = gdvRegiao.SelectedRow;
+            lblRegiao.Text = Server.HtmlDecode(row.Cells[1].Text);
+            txtRegiao.Text = Server.HtmlDecode(row.Cells[2].Text);
+        }        
     }
 }

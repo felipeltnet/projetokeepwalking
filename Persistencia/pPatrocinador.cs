@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.SqlClient;
+using System.Data;
 
 namespace Persistencia
 {
     public class pPatrocinador
     {
-        String nomePatrocinador;
-
         public void adicionar(String nomePatrocinador)
         {
-            String SQL = "INSERT INTO Patrocinadores(nomePatrocinador) VALUES('" + nomePatrocinador + "')";
+            String SQL = "INSERT INTO Patrocinador(nomePatrocinador) VALUES('" + nomePatrocinador + "')";
             Conexao oConexao = new Conexao("SQLServer");
             oConexao.executeNoQuery(SQL);
             oConexao.fechaConexao();
@@ -26,14 +26,20 @@ namespace Persistencia
         }
         public void deletar(String idPatrocinador)
         {
-            String SQL = "DELETE Patrocinadores WHERE idPatrocinador = "+ idPatrocinador;
+            String SQL = "DELETE Patrocinador WHERE idPatrocinador = "+ idPatrocinador;
             Conexao oConexao = new Conexao("SQLServer");
             oConexao.executeNoQuery(SQL);
             oConexao.fechaConexao();
         }
-        public String consultar()
+        public DataSet consultar()
         {
-            return "";
+            String SQL = "SELECT * FROM Patrocinador";
+            Conexao oConexao = new Conexao("SQLServer");
+            SqlDataAdapter adapter = new SqlDataAdapter(SQL, oConexao.cn);
+            DataSet ds = new DataSet("Tabela");
+            adapter.Fill(ds, "Tabela");
+            oConexao.fechaConexao();
+            return ds;
         }
     }
 }

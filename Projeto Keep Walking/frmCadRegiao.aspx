@@ -8,26 +8,21 @@
 </head>
 <body>
     <form id="form1" runat="server">
+    <div>
+    
         <asp:Label ID="Label1" runat="server" Text="Região"></asp:Label>
         :<asp:TextBox ID="txtRegiao" runat="server"></asp:TextBox>
+        <asp:Label ID="lblRegiao" runat="server" Text="Label" Visible="False"></asp:Label>
         <br />
-        <asp:Button ID="btnAdicionar" runat="server" OnClick="btnInserir_Click" Text="Adicionar" />
-        <asp:Button ID="btnAlterar" runat="server" Text="Alterar" />
-        <asp:Button ID="btnDeletar" runat="server" Text="Deletar" />
+        <asp:Button ID="btnAdicionar" runat="server" Text="Adicionar" OnClick="btnAdicionar_Click1" />
+        <asp:Button ID="btnAlterar" runat="server" Text="Alterar" OnClick="btnAlterar_Click1" />
+        <asp:Button ID="btnDeletar" runat="server" Text="Deletar" OnClick="btnDeletar_Click1" />
         <asp:Button ID="btnConsultar" runat="server" Text="Consultar" />
-        <asp:GridView ID="gdvRegiao" runat="server" AllowPaging="True" CellPadding="4" ForeColor="#333333" GridLines="None" Height="133px">
-            <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
-            <EditRowStyle BackColor="#999999" />
-            <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
-            <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
-            <PagerStyle BackColor="#284775" ForeColor="White" HorizontalAlign="Center" />
-            <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />
-            <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
-            <SortedAscendingCellStyle BackColor="#E9E7E2" />
-            <SortedAscendingHeaderStyle BackColor="#506C8C" />
-            <SortedDescendingCellStyle BackColor="#FFFDF8" />
-            <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
+    
+        <asp:GridView ID="gdvRegiao" runat="server" AllowPaging="True" AutoGenerateSelectButton="True" OnSelectedIndexChanged="gdvRegiao_SelectedIndexChanged">
         </asp:GridView>
+    
+    </div>
     </form>
 </body>
 </html>

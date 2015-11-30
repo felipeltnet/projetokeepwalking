@@ -10,20 +10,20 @@ namespace Negocio
 {
     public class Regiao
     {
-        String nomeRegiao;
-
-        public void inserir(String nomeRegiao)
+        public void adicionar(String nomeRegiao)
         {
             pRegiao objRegiao = new pRegiao();
-            objRegiao.inserir(nomeRegiao);
+            objRegiao.adicionar(nomeRegiao);
         }
-        public void alterar(String nomeRegiao)
+        public void deletar(String idRegiao)
         {
-
+            pRegiao objRegiao = new pRegiao();
+            objRegiao.deletar(idRegiao);
         }
-        public void deletar(String nomeRegiao)
+        public void alterar(String idRegiao, String nomeRegiao)
         {
-
+            pRegiao objRegiao = new pRegiao();
+            objRegiao.alterar(idRegiao, nomeRegiao);
         }
         public DataSet consultar()
         {
