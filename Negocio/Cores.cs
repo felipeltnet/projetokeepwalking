@@ -10,12 +10,13 @@ namespace Negocio
 {
     public class Cores
     {
-        String nomeCor;
+        String nomeCores;
+        String idCores;
 
-        public void adicionar(String nomeCor)
+        public void adicionar(String nomeCores)
         {
             pCores objCores = new pCores();
-            objCores.adicionar(nomeCor);
+            objCores.adicionar(nomeCores);
         }
         public void deletar(String idCores)
         {

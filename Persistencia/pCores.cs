@@ -10,25 +10,25 @@ namespace Persistencia
 {
     public class pCores
     {
-        String nomeCor;
+        String nomeCores;
 
-        public void adicionar(String nomeCor)
+        public void adicionar(String nomeCores)
         {
-            String SQL = "INSERT INTO Cores(nomeCor) VALUES ('" +  nomeCor + "')";
+            String SQL = "INSERT INTO Cores(nomeCor) VALUES ('" +  nomeCores + "')";
             Conexao objConexao = new Conexao("SQLServer");
             objConexao.executeNoQuery(SQL);
             objConexao.fechaConexao();
         }
         public void deletar(String idCores)
         {
-            String SQL = "DELETE Cores WHERE idCores = " + idCores;
+            String SQL = "DELETE Cores WHERE idCores = '" + idCores + "' ";
             Conexao oConexao = new Conexao("SQLServer");
             oConexao.executeNoQuery(SQL);
             oConexao.fechaConexao();
         }
         public void alterar(String idCores, String nomeCores)
         {
-            String SQL = "UPDATE Cores" + " SET nomeCor = '" + nomeCores + "' WHERE idCores = '" + idCores + "')";
+            String SQL = "UPDATE Cores SET nomeCores = '" + nomeCores + "' WHERE idCores = '" + idCores + "'";
             Conexao oConexao = new Conexao("SQLServer");
             oConexao.executeNoQuery(SQL);
             oConexao.fechaConexao();
