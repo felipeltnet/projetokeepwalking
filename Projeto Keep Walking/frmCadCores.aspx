@@ -14,11 +14,16 @@
         <br />
         Nome da cor:
         <asp:TextBox ID="txtNomeCor" runat="server"></asp:TextBox>
+        <asp:Label ID="lblCores" runat="server" Text="Label" Visible="False"></asp:Label>
         <br />
         <br />
-        <asp:Button ID="btnCadastrar" runat="server" OnClick="btnCadastrar_Click" Text="Cadastrar" />
-        <asp:Button ID="btnAlterar" runat="server" Text="Alterar" />
-        <asp:Button ID="btnDeletar" runat="server" Text="Deletar" />
+        <asp:Button ID="btnAdicionar" runat="server" OnClick="btnCadastrar_Click" Text="Adicionar" />
+        <asp:Button ID="btnAlterar" runat="server" Text="Alterar" OnClick="btnAlterar_Click" />
+        <asp:Button ID="btnDeletar" runat="server" Text="Deletar" OnClick="btnDeletar_Click" />
+    
+        <asp:Button ID="btnConsultar" runat="server" OnClick="btnConsultar_Click" Text="Consultar" />
+        <asp:GridView ID="gdvCores" runat="server" AllowPaging="True" AutoGenerateSelectButton="True" OnSelectedIndexChanged="gdvCores_SelectedIndexChanged">
+        </asp:GridView>
     
     </div>
     </form>

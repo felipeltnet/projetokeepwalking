@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Persistencia;
+using System.Data;
 
 namespace Negocio
 {
@@ -16,13 +17,22 @@ namespace Negocio
             pCores objCores = new pCores();
             objCores.adicionar(nomeCor);
         }
-        public void deletar()
-        { }
-        public void alterar()
-        { }
-        public String consultar()
+        public void deletar(String idCores)
         {
-            return "";
+            pCores objCores = new pCores();
+            objCores.deletar(idCores);
+        
+        }
+        public void alterar(String idCores, String nomeCores)
+        {
+            pCores objCores = new pCores();
+            objCores.alterar(idCores, nomeCores); 
+        }
+       
+        public DataSet consultar()
+        {
+            pCores objCores = new pCores();
+            return objCores.consultar();
         }
     }
 }
