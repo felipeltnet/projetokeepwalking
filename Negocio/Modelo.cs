@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Persistencia;
+using System.Data;
 
 namespace Negocio
 {
@@ -27,20 +28,13 @@ namespace Negocio
 
         }
 
-        public Object consultarTodos()
+        public DataSet consultarTodos()
         {
-            return 1;
+            pModelo objModelo = new pModelo();
+            return objModelo.consultarTodos();
         }
 
-        public String buscar_CPF()
-        {
-            return "";
-        }
-
-        public int calcularIdade()
-        {
-            return 1;
-        }
+       
 
 
     }

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.SqlClient;
+using System.Data;
 
 namespace Persistencia
 
@@ -29,21 +31,15 @@ namespace Persistencia
 
         }
 
-        public Object consultarTodos()
+        public DataSet consultarTodos()
         {
-            return 1;
+            String SQL = "SELECT * FROM Modelo";
+            Conexao oConexao = new Conexao("SQLServer");
+            SqlDataAdapter adapter = new SqlDataAdapter(SQL, oConexao.cn);
+            DataSet ds = new DataSet("Tabela");
+            adapter.Fill(ds, "Tabela");
+            oConexao.fechaConexao();
+            return ds;
         }
-
-        public String buscar_CPF()
-        {
-            return "";
-        }
-
-        public int calcularIdade()
-        {
-            return 1;
-        }
-
-
     }
 }
