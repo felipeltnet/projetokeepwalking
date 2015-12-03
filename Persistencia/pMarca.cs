@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace Persistencia
 {
@@ -17,17 +19,33 @@ namespace Persistencia
             objConexao.executeNoQuery(SQL);
             objConexao.fechaConexao();
         }
-        public void alterar()
+        public void alterar(String nomeMarca, String idMarca)
         {
-
+            String SQL = "UPDATE Marca SET nomeMarca = '" + nomeMarca + "' WHERE idMarca = " + idMarca;
+            Conexao oConexao = new Conexao("SQLServer");
+            oConexao.executeNoQuery(SQL);
+            oConexao.fechaConexao();
         }
-        public void deletar()
+        public void deletar(String idMarca)
         {
-
+            String SQL = "DELETE Marca WHERE idMarca =" + idMarca;
+            Conexao oConexao = new Conexao("SQLServer");
+            oConexao.executeNoQuery(SQL);
+            oConexao.fechaConexao();
         }
-        public String consultar()
+        public DataSet consultar()
         {
-            return "";
+            String SQL = "SELECT * FROM Marca";
+
+            Conexao objConexao = new Conexao("SQLServer");
+
+            SqlDataAdapter adapter = new SqlDataAdapter(SQL, objConexao.cn);
+            DataSet ds = new DataSet("Tabela");
+            adapter.Fill(ds, "Tabela");
+
+            objConexao.fechaConexao();
+
+            return ds;
         }
     }
 }
