@@ -33,9 +33,12 @@ namespace Persistencia
             objConexao.executeNoQuery(SQL);
             objConexao.fechaConexao();
         }
-        public void alterar()
+        public void alterar(String email, String senha)
         {
-
+            String SQL = "UPDATE Usuario  SET senha = '" + senha + "' WHERE email = '" + email + "'";
+            Conexao objConexao = new Conexao("SQLServer");
+            objConexao.executeNoQuery(SQL);
+            objConexao.fechaConexao();
         }
         public void deletar(String email, String senha)
         {
