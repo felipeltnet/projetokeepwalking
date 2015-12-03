@@ -19,11 +19,19 @@ namespace Persistencia
             oConexao.executeNoQuery(SQL);
             oConexao.fechaConexao();
         }
-        public void deletar()
+        public void deletar(String idCategoria)
         {
+            String SQL = "DELETE Categoria WHERE idCategoria =" + idCategoria;
+            Conexao oConexao = new Conexao("SQLServer");
+            oConexao.executeNoQuery(SQL);
+            oConexao.fechaConexao();
         }
-        public void alterar()
+        public void alterar(String idCategoria, String nomeCategoria)
         {
+            String SQL = "UPDATE Categoria SET nomeCategoria = '" + nomeCategoria + "' WHERE idCategoria = " + idCategoria;
+            Conexao oConexao = new Conexao("SQLServer");
+            oConexao.executeNoQuery(SQL);
+            oConexao.fechaConexao();
         }
         public DataSet consultar()
         {
