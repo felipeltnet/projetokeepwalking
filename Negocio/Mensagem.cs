@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Persistencia;
+using System.Data;
 
 namespace Negocio
 {
@@ -17,13 +18,20 @@ namespace Negocio
             pMensagem objMensagem = new pMensagem();
             objMensagem.adicionar(mensagem, assunto);
         }
-        public void deletar()
-        { }
-        public void alterar()
-        { }
-        public String consultar()
+        public void deletar(String idMensagem)
         {
-            return ""; 
+            pMensagem objMensagem = new pMensagem();
+            objMensagem.deletar(idMensagem);
+        }
+        public void alterar(String mensagem, String assunto, String idMensagem)
+        {
+            pMensagem objMensagem = new pMensagem();
+            objMensagem.alterar(idMensagem,assunto, mensagem);
+        }
+        public DataSet consultar()
+        {
+            pMensagem objMensagem = new pMensagem();
+            return objMensagem.consultar(); ; 
         }
     }
     
