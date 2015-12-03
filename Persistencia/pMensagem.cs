@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.SqlClient;
+using System.Data;
 
 namespace Persistencia
 {
     public class pMensagem
     {
-        String assunto;
-        String mensagem;
+        
 
         public void adicionar(String mensagem, String assunto)
         {
@@ -18,17 +19,29 @@ namespace Persistencia
             oConexao.executeNoQuery(SQL);
             oConexao.fechaConexao();
         }
-        public void alterar()
+        public void alterar(String mensagem, String assunto, String idMensagem)
         {
-
+            String SQL = "UPDATE Mensagem" + " SET assunto = '" + assunto + "', mensagem = '" + mensagem + "' WHERE idMensagem = '" + idMensagem + "')";
+            Conexao oConexao = new Conexao("SQLServer");
+            oConexao.executeNoQuery(SQL);
+            oConexao.fechaConexao();
         }
-        public void deletar()
+        public void deletar(String idMensagem)
         {
-
+            String SQL = "DELETE Mensagem WHERE idMensagem = " + idMensagem;
+            Conexao oConexao = new Conexao("SQLServer");
+            oConexao.executeNoQuery(SQL);
+            oConexao.fechaConexao();
         }
-        public String consultar()
+        public DataSet consultar()
         {
-            return "";
-        }
+            String SQL = "SELECT * FROM Mensagem";
+            Conexao oConexao = new Conexao("SQLServer");
+            SqlDataAdapter adapter = new SqlDataAdapter(SQL, oConexao.cn);
+            DataSet ds = new DataSet("Tabela");
+            adapter.Fill(ds, "Tabela");
+            oConexao.fechaConexao();
+            return ds; ;
+        }        
     }
 }
