@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Persistencia;
+using System.Data;
 
 namespace Negocio
 {
@@ -16,17 +17,20 @@ namespace Negocio
             pMarca objMarca = new pMarca();
             objMarca.adicionar(nomeMarca);
         }
-        public void alterar()
+        public void alterar(String nomeMarca, String idMarca)
         {
-
+            pMarca objMarca = new pMarca();
+            objMarca.alterar(nomeMarca, idMarca);
         }
-        public void deletar()
+        public void deletar(String idMarca)
         {
-
+            pMarca objMarca = new pMarca();
+            objMarca.deletar(idMarca);
         }
-        public String consultar()
+        public DataSet consultar()
         {
-            return "";
+            pMarca objMarca = new pMarca();
+            return objMarca.consultar();
         }
     }
 }

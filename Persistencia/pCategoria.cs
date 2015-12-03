@@ -18,6 +18,7 @@ namespace Persistencia
             Conexao oConexao = new Conexao("SQLServer");
             oConexao.executeNoQuery(SQL);
             oConexao.fechaConexao();
+
         }
         public void deletar(String idCategoria)
         {
