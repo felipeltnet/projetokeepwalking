@@ -12,11 +12,22 @@ namespace Projeto_Keep_Walking
 {
     public partial class frmCadEstado : System.Web.UI.Page
     {
+        DataSet lista;
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!Page.IsPostBack)
+            {
+                Estado objEstado = new Estado();
+                lista = objEstado.consultar();
 
+                if (lista != null)
+                {
+                    gdvEstado.DataSource = lista;
+                    gdvEstado.DataMember = "Tabela";
+                    gdvEstado.DataBind();
+                }
+            }
         }
-
         protected void btnAdicionar_Click(object sender, EventArgs e)
         {
             Estado objEstado = new Estado();
@@ -41,12 +52,7 @@ namespace Projeto_Keep_Walking
             GridViewRow row = gdvEstado.SelectedRow;
             lblEstado.Text = Server.HtmlDecode(row.Cells[1].Text);
             txtEstado.Text = Server.HtmlDecode(row.Cells[2].Text);
-        }
-
-        protected void btnConsultar_Click(object sender, EventArgs e)
-        {
-
-        }   
+        }       
                 
     }
 }

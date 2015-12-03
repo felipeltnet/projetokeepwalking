@@ -31,6 +31,15 @@ namespace Projeto_Keep_Walking {
         protected global::System.Web.UI.WebControls.TextBox txtEmail;
         
         /// <summary>
+        /// txtidEmail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtidEmail;
+        
+        /// <summary>
         /// btnAdicionar control.
         /// </summary>
         /// <remarks>
@@ -58,12 +67,12 @@ namespace Projeto_Keep_Walking {
         protected global::System.Web.UI.WebControls.Button btnAlterar;
         
         /// <summary>
-        /// btnConsultar control.
+        /// gdvNewsLetter control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnConsultar;
+        protected global::System.Web.UI.WebControls.GridView gdvNewsLetter;
     }
 }

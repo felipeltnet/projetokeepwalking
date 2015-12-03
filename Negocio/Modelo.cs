@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Persistencia;
+using System.Data;
 
 namespace Negocio
 {
@@ -17,30 +18,25 @@ namespace Negocio
             objModelo.inserir(descricao); 
         }
 
-        public void alterar()
+        public void alterar(String idModelo, String nomeModelo)
         {
-
+            pModelo objModelo = new pModelo();
+            objModelo.alterar(idModelo, nomeModelo);
         }
 
-        public void apagar()
+        public void deletar(String idModelo)
         {
-
+            pModelo objModelo = new pModelo();
+            objModelo.deletar(idModelo);
         }
 
-        public Object consultarTodos()
+        public DataSet consultarTodos()
         {
-            return 1;
+            pModelo objModelo = new pModelo();
+            return objModelo.consultarTodos();
         }
 
-        public String buscar_CPF()
-        {
-            return "";
-        }
-
-        public int calcularIdade()
-        {
-            return 1;
-        }
+       
 
 
     }

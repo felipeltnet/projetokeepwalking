@@ -13,11 +13,25 @@
         E-mail:
         <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
         <br />
+        idEmail:
+        <asp:TextBox ID="txtidEmail" runat="server" OnTextChanged="txtEmail0_TextChanged"></asp:TextBox>
+        <br />
         <br />
         <asp:Button ID="btnAdicionar" runat="server" OnClick="btnAdicionar_Click" Text="Adicionar" />
-        <asp:Button ID="btnDeletar" runat="server" Text="Deletar" />
-        <asp:Button ID="btnAlterar" runat="server" Text="Alterar" />
-        <asp:Button ID="btnConsultar" runat="server" Text="Consultar" />
+        <asp:Button ID="btnDeletar" runat="server" Text="Deletar" OnClick="btnDeletar_Click" />
+        <asp:Button ID="btnAlterar" runat="server" Text="Alterar" OnClick="btnAlterar_Click" />
+        <br />
+        <br />
+        <asp:GridView ID="gdvNewsLetter" runat="server" AllowPaging="True" AutoGenerateSelectButton="True" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal" OnSelectedIndexChanged="gdvNewsLetter_SelectedIndexChanged">
+            <FooterStyle BackColor="#CCCC99" ForeColor="Black" />
+            <HeaderStyle BackColor="#333333" Font-Bold="True" ForeColor="White" />
+            <PagerStyle BackColor="White" ForeColor="Black" HorizontalAlign="Right" />
+            <SelectedRowStyle BackColor="#CC3333" Font-Bold="True" ForeColor="White" />
+            <SortedAscendingCellStyle BackColor="#F7F7F7" />
+            <SortedAscendingHeaderStyle BackColor="#4B4B4B" />
+            <SortedDescendingCellStyle BackColor="#E5E5E5" />
+            <SortedDescendingHeaderStyle BackColor="#242121" />
+        </asp:GridView>
     </form>
 </body>
 </html>

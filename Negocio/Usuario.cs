@@ -30,9 +30,10 @@ namespace Negocio
             pUsuario objUsuario = new pUsuario();
             objUsuario.adicionar(email, senha, nome, cpf, sexo, dataNascimento, ddd, telefone, cidade, estado, endereco, complemento, cep);
         }
-        public void alterar()
+        public void alterar(String email, String senha)
         {
-
+            pUsuario objUsuario = new pUsuario();
+            objUsuario.alterar(email, senha);
         }
         public void deletar(String email, String senha)
         {

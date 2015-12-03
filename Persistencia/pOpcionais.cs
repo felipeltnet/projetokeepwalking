@@ -9,26 +9,37 @@ using System.Data;
 namespace Persistencia
 {
     public class pOpcionais
-    {        String nomeOpcionais;
-
+    {
         public void adicionar(String nomeOpcionais)
         {
-            String SQL = "INSERT INTO Marca(nomeOpcionais) VALUES('" + nomeOpcionais + "')";
-            Conexao objConexao = new Conexao("SQLServer");
-            objConexao.executeNoQuery(SQL);
-            objConexao.fechaConexao();
+            String SQL = "INSERT INTO Opcionais(nomeOpcionais) VALUES('" + nomeOpcionais + "')";
+            Conexao oConexao = new Conexao("SQLServer");
+            oConexao.executeNoQuery(SQL);
+            oConexao.fechaConexao();
         }
-        public void alterar()
+        public void alterar(String idOpcionais, String nomeOpcionais)
         {
-
+            String SQL = "UPDATE Opcionais" + " SET nomeOpcionais = '" + nomeOpcionais + "' WHERE idOpcionais = '" + idOpcionais + "')";
+            Conexao oConexao = new Conexao("SQLServer");
+            oConexao.executeNoQuery(SQL);
+            oConexao.fechaConexao();
         }
-        public void deletar()
+        public void deletar(String idOpcionais)
         {
-
+            String SQL = "DELETE Opcionais WHERE idOpcionais = " + idOpcionais;
+            Conexao oConexao = new Conexao("SQLServer");
+            oConexao.executeNoQuery(SQL);
+            oConexao.fechaConexao();
         }
-        public String consultar()
+        public DataSet consultar()
         {
-            return "";
+            String SQL = "SELECT * FROM Opcionais";
+            Conexao oConexao = new Conexao("SQLServer");
+            SqlDataAdapter adapter = new SqlDataAdapter(SQL, oConexao.cn);
+            DataSet ds = new DataSet("Tabela");
+            adapter.Fill(ds, "Tabela");
+            oConexao.fechaConexao();
+            return ds;
         }
     }
 }

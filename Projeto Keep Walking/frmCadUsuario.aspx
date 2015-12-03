@@ -50,11 +50,11 @@
         <br />
         <asp:Button ID="btnCadastrar" runat="server" OnClick="btnCadastrar_Click" Text="Cadastrar" />
         &nbsp;<asp:Button ID="btnDeletar" runat="server" OnClick="btnDeletar_Click" Text="Deletar" />
-&nbsp;<asp:Button ID="btnAlterar" runat="server" Text="Alterar" />
+&nbsp;<asp:Button ID="btnAlterar" runat="server" Text="Alterar" OnClick="btnAlterar_Click" />
 &nbsp;<asp:Button ID="btnConsultar" runat="server" Text="Consultar" />
         <br />
         <br />
-        <asp:GridView ID="gdvUsuario" runat="server" AllowPaging="True" BackColor="White" BorderColor="#3366CC" BorderStyle="None" BorderWidth="1px" CellPadding="4">
+        <asp:GridView ID="gdvUsuario" runat="server" AllowPaging="True" BackColor="White" BorderColor="#3366CC" BorderStyle="None" BorderWidth="1px" CellPadding="4" AutoGenerateSelectButton="True" OnSelectedIndexChanged="gdvUsuario_SelectedIndexChanged">
             <FooterStyle BackColor="#99CCCC" ForeColor="#003399" />
             <HeaderStyle BackColor="#003399" Font-Bold="True" ForeColor="#CCCCFF" />
             <PagerStyle BackColor="#99CCCC" ForeColor="#003399" HorizontalAlign="Left" />
