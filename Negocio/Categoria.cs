@@ -17,11 +17,15 @@ namespace Negocio
             pCategoria objCategoria = new pCategoria();
             objCategoria.adicionar(nomeCategoria);
         }
-        public void deletar()
+        public void deletar(String idCategoria)
         {
+            pCategoria objCategoria = new pCategoria();
+            objCategoria.deletar(idCategoria);
         }
-        public void alterar()
+        public void alterar(String idCategoria, String nomeCategoria)
         {
+            pCategoria objCategoria = new pCategoria();
+            objCategoria.alterar(idCategoria, nomeCategoria);
         }
         public DataSet consultar()
         {
