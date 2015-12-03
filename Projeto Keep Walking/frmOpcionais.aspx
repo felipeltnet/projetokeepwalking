@@ -12,11 +12,15 @@
     
         <asp:Label ID="Label1" runat="server" Text="Opcionais"></asp:Label>
         :<asp:TextBox ID="txtOpcionais" runat="server"></asp:TextBox>
+        <asp:Label ID="lblOpcionais" runat="server" Text="Label" Visible="False"></asp:Label>
         <br />
         <asp:Button ID="btnAdicionar" runat="server" OnClick="btnAdicionar_Click" Text="Adicionar" />
-        <asp:Button ID="btnDeletar" runat="server" Text="Deletar" />
-        <asp:Button ID="btnAlterar" runat="server" Text="Alterar" />
-        <asp:Button ID="btnConsultar" runat="server" Text="Consultar" />
+        <asp:Button ID="btnDeletar" runat="server" Text="Deletar" OnClick="btnDeletar_Click" />
+        <asp:Button ID="btnAlterar" runat="server" Text="Alterar" OnClick="btnAlterar_Click" />
+        <asp:Button ID="btnConsultar" runat="server" Text="Consultar" OnClick="btnConsultar_Click" />
+    
+        <asp:GridView ID="gdvOpcionais" runat="server" AllowPaging="True" AutoGenerateSelectButton="True" OnSelectedIndexChanged="gdvOpcionais_SelectedIndexChanged">
+        </asp:GridView>
     
     </div>
     </form>

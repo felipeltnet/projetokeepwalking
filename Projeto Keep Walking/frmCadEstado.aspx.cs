@@ -45,9 +45,9 @@ namespace Projeto_Keep_Walking
         {
             Estado objEstado = new Estado();
             objEstado.alterar(lblEstado.Text, txtEstado.Text);
-        }
+        }       
 
-        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+        protected void gdvEstado_SelectedIndexChanged(object sender, EventArgs e)
         {
             GridViewRow row = gdvEstado.SelectedRow;
             lblEstado.Text = Server.HtmlDecode(row.Cells[1].Text);
