@@ -35,5 +35,18 @@ namespace WebAppExercicio
             objModelo.inserir(txtDescricao.Text);
 
         }
+
+        protected void btnDeletar_Click(object sender, EventArgs e)
+        {
+            Modelo objModelo = new Modelo();
+            objModelo.deletar(lblModelo.Text);
+            Response.Redirect(Request.RawUrl);
+        }
+
+        protected void btnAlterar_Click(object sender, EventArgs e)
+        {
+            Modelo objModelo = new Modelo();
+            objModelo.alterar(lblModelo.Text, txtDescricao.Text);
+        }
     }
 }

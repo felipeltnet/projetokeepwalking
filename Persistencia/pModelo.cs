@@ -21,14 +21,20 @@ namespace Persistencia
             oConexao.fechaConexao();
         }
 
-        public void alterar()
+        public void alterar(String idModelo, String nomeModelo)
         {
-
+            String SQL = "UPDATE Modelo" + " SET nomeModelo = '" + nomeModelo + "' WHERE idModelo = '" + idModelo + "')";
+            Conexao oConexao = new Conexao("SQLServer");
+            oConexao.executeNoQuery(SQL);
+            oConexao.fechaConexao();
         }
 
-        public void apagar()
+        public void deletar(String idModelo)
         {
-
+            String SQL = "DELETE Modelo WHERE idModelo = " + idModelo;
+            Conexao oConexao = new Conexao("SQLServer");
+            oConexao.executeNoQuery(SQL);
+            oConexao.fechaConexao();
         }
 
         public DataSet consultarTodos()

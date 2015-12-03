@@ -18,14 +18,16 @@ namespace Negocio
             objModelo.inserir(descricao); 
         }
 
-        public void alterar()
+        public void alterar(String idModelo, String nomeModelo)
         {
-
+            pModelo objModelo = new pModelo();
+            objModelo.alterar(idModelo, nomeModelo);
         }
 
-        public void apagar()
+        public void deletar(String idModelo)
         {
-
+            pModelo objModelo = new pModelo();
+            objModelo.deletar(idModelo);
         }
 
         public DataSet consultarTodos()

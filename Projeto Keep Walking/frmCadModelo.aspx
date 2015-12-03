@@ -16,7 +16,7 @@
         <br />
         <asp:Button ID="btnAdicionar" runat="server" OnClick="btnInserir_Click" Text="Adicionar" />
     
-        <asp:Button ID="btnAlterar" runat="server" Text="Alterar" />
+        <asp:Button ID="btnAlterar" runat="server" Text="Alterar" OnClick="btnAlterar_Click" />
         <asp:Button ID="btnDeletar" runat="server" Text="Deletar" OnClick="btnDeletar_Click" />
         <asp:Button ID="btnConsultar" runat="server" Text="Consultar" />
     
