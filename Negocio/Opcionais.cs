@@ -9,25 +9,26 @@ using System.Data;
 namespace Negocio
 {
    public class Opcionais
-    {        
-       String nomeOpcionais;
-
+    {
         public void adicionar(String nomeOpcionais)
         {
             pOpcionais objOpcionais = new pOpcionais();
             objOpcionais.adicionar(nomeOpcionais);
         }
-        public void alterar()
+        public void deletar(String idOpcionais)
         {
-
+            pOpcionais objOpcionais = new pOpcionais();
+            objOpcionais.deletar(idOpcionais);
         }
-        public void deletar()
+        public void alterar(String idOpcionais, String nomeOpcionais)
         {
-
+            pOpcionais objOpcionais = new pOpcionais();
+            objOpcionais.alterar(idOpcionais, nomeOpcionais);
         }
-        public String consultar()
+        public DataSet consultar()
         {
-            return "";
+            pOpcionais objOpcionais = new pOpcionais();
+            return objOpcionais.consultar();
         }
     }
 }

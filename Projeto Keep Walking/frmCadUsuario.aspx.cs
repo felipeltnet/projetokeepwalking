@@ -41,5 +41,18 @@ namespace Projeto_Keep_Walking
             Usuario objUsuario = new Usuario();
             objUsuario.deletar(txtEmail.Text, txtSenha.Text);
         }
+
+        protected void gdvUsuario_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            GridViewRow row = gdvUsuario.SelectedRow;
+            txtNome.Text = Server.HtmlDecode(row.Cells[1].Text);
+            txtEmail.Text = Server.HtmlDecode(row.Cells[2].Text);
+        }
+
+        protected void btnAlterar_Click(object sender, EventArgs e)
+        {
+            Usuario objUsuario = new Usuario();
+            objUsuario.alterar(txtEmail.Text, txtSenha.Text);
+        }
     }
 }
