@@ -60,5 +60,17 @@ namespace Persistencia
             objConexao.fechaConexao();
             return ds;
         }
+        public DataSet logar(string nome, string senha)
+        {
+            String SQL = "SELECT * FROM  Usuario WHERE nome = '" + nome + "' AND senha ='" + senha + "'";
+            Conexao objConexao = new Conexao("SQLServer");
+
+            SqlDataAdapter adapter = new SqlDataAdapter(SQL, objConexao.cn);
+            DataSet ds = new DataSet("Tabela");
+            adapter.Fill(ds, "Tabela");
+
+            objConexao.fechaConexao();
+            return ds;        
+        }
     }
 }

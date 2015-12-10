@@ -45,6 +45,12 @@ namespace Negocio
             pUsuario objUsuario = new pUsuario();
             return objUsuario.consultar();
         }
+        public String logar(String nome, String senha)
+        {
+            pUsuario objUsuario = new pUsuario();
+            objUsuario.logar(nome,senha);
+            return "";
+        }
     }
 
 }
