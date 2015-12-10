@@ -48,5 +48,12 @@ namespace WebAppExercicio
             Modelo objModelo = new Modelo();
             objModelo.alterar(lblModelo.Text, txtDescricao.Text);
         }
+
+        protected void gdvModelo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            GridViewRow row = gdvModelo.SelectedRow;
+            lblModelo.Text = Server.HtmlDecode(row.Cells[1].Text);
+            txtDescricao.Text = Server.HtmlDecode(row.Cells[2].Text);
+        }        
     }
 }

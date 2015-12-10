@@ -17,7 +17,7 @@
         <asp:Label ID="lblCores" runat="server" Text="Label" Visible="False"></asp:Label>
         <br />
         <br />
-        <asp:Button ID="btnAdicionar" runat="server" OnClick="btnCadastrar_Click" Text="Adicionar" />
+        <asp:Button ID="btnAdicionar" runat="server" OnClick="btnAdicionar_Click1" Text="Adicionar" />
         <asp:Button ID="btnAlterar" runat="server" Text="Alterar" OnClick="btnAlterar_Click" />
         <asp:Button ID="btnDeletar" runat="server" Text="Deletar" OnClick="btnDeletar_Click" />
     

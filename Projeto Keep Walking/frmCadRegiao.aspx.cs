@@ -10,10 +10,22 @@ using System.Data;
 namespace Projeto_Keep_Walking
 {
     public partial class frmCadRegiao : System.Web.UI.Page
-    {
+    {        
+        DataSet lista;
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!Page.IsPostBack)
+            {
+                Regiao objRegiao = new Regiao();
+                lista = objRegiao.consultar();
 
+                if (lista != null)
+                {
+                    gdvRegiao.DataSource = lista;
+                    gdvRegiao.DataMember = "Tabela";
+                    gdvRegiao.DataBind();
+                }
+            }
         }
 
         protected void btnAdicionar_Click1(object sender, EventArgs e)

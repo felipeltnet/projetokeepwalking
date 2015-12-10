@@ -28,13 +28,12 @@ namespace Projeto_Keep_Walking
             }
         }
 
-
-        protected void btnAdicionar_Click(object sender, EventArgs e)
+        protected void btnAdicionar_Click1(object sender, EventArgs e)
         {
             Cores objCores = new Cores();
             objCores.adicionar(txtNomeCor.Text);
         }
-
+        
         protected void btnDeletar_Click(object sender, EventArgs e)
         {
             Cores objCores = new Cores();
@@ -46,12 +45,7 @@ namespace Projeto_Keep_Walking
         {
             Cores objEstado = new Cores();
             objEstado.alterar(lblCores.Text, txtNomeCor.Text);
-        }
-
-        protected void btnConsultar_Click(object sender, EventArgs e)
-        {
-
-        }
+        }        
 
         protected void gdvCores_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -59,5 +53,6 @@ namespace Projeto_Keep_Walking
             lblCores.Text = Server.HtmlDecode(row.Cells[1].Text);
             txtNomeCor.Text = Server.HtmlDecode(row.Cells[2].Text);
         }
+                
     }
 }

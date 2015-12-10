@@ -11,10 +11,22 @@ using Negocio;
 namespace Projeto_Keep_Walking
 {
     public partial class frmPatrocinador : System.Web.UI.Page
-    {
+    {       
+        DataSet lista;
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!Page.IsPostBack)
+            {
+                Patrocinador objPatrocinador = new Patrocinador();
+                lista = objPatrocinador.consultar();
 
+                if (lista != null)
+                {
+                    gdvPatrocinador.DataSource = lista;
+                    gdvPatrocinador.DataMember = "Tabela";
+                    gdvPatrocinador.DataBind();
+                }
+            }
         }
 
         protected void btnAdicionar_Click(object sender, EventArgs e)
