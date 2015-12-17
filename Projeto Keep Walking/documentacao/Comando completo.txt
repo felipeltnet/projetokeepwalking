@@ -1,0 +1,140 @@
+CREATE TABLE [dbo].[Usuarios](
+	[idUsuario] [int] IDENTITY(1,1) NOT NULL,
+	[email] [varchar](50) NOT NULL,
+	[senha] [int] NOT NULL,
+	[nome] [varchar](50) NOT NULL,
+	[cpf] [int] NOT NULL,
+	[sexo] [varchar](50) NOT NULL,
+	[dataNascimento] [datetime] NOT NULL,
+	[telefone] [int] NOT NULL,
+	[cidade] [varchar](50) NOT NULL,
+	[estado] [varchar](50) NOT NULL,
+	[endereco] [varchar](50) NOT NULL,
+	[complemento] [varchar](50) NOT NULL,
+	[cep] [int] NOT NULL,
+	[ddd] [int] NOT NULL,
+ CONSTRAINT [PK_Usuarios] PRIMARY KEY CLUSTERED 
+(
+	[idUsuario] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+CREATE TABLE [dbo].[Categoria](
+	[idCategoria] [int] IDENTITY(1,1) NOT NULL,
+	[nomeCategoria] [varchar](50) NOT NULL,
+ CONSTRAINT [PK_Categoria] PRIMARY KEY CLUSTERED 
+(
+	[idCategoria] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+CREATE TABLE [dbo].[Cores](
+	[idCor] [int] IDENTITY(1,1) NOT NULL,
+	[nomeCor] [varchar](50) NOT NULL,
+ CONSTRAINT [PK_Cores] PRIMARY KEY CLUSTERED 
+(
+	[idCor] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+CREATE TABLE [dbo].[Estado](
+	[idEstado] [int] IDENTITY(1,1) NOT NULL,
+	[idRegiao] [int] NOT NULL,
+	[nomeEstado] [varchar](50) NOT NULL,
+ CONSTRAINT [PK_Estado] PRIMARY KEY CLUSTERED 
+(
+	[idEstado] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+CREATE TABLE [dbo].[Marca](
+	[idMarca] [int] IDENTITY(1,1) NOT NULL,
+	[idCategoria] [int] NOT NULL,
+	[nomeMarca] [varchar](50) NOT NULL,
+ CONSTRAINT [PK_Marca] PRIMARY KEY CLUSTERED 
+(
+	[idMarca] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+CREATE TABLE [dbo].[Mensagem](
+	[idFale] [int] IDENTITY(1,1) NOT NULL,
+	[idUsuario] [int] NOT NULL,
+	[assunto] [varchar](50) NOT NULL,
+	[mensagem] [varchar](300) NOT NULL,
+ CONSTRAINT [PK_Mensagem] PRIMARY KEY CLUSTERED 
+(
+	[idFale] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+CREATE TABLE [dbo].[Modelo](
+	[idModelo] [int] IDENTITY(1,1) NOT NULL,
+	[idMarca] [int] NOT NULL,
+	[descricao] [varchar](50) NOT NULL,
+ CONSTRAINT [PK_Modelo] PRIMARY KEY CLUSTERED 
+(
+	[idModelo] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+CREATE TABLE [dbo].[NewsLetter](
+	[idNewsLetter] [int] IDENTITY(1,1) NOT NULL,
+	[email] [varchar](50) NOT NULL,
+ CONSTRAINT [PK_NewsLetter] PRIMARY KEY CLUSTERED 
+(
+	[idNewsLetter] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+CREATE TABLE [dbo].[Opcionais](
+	[idOpcional] [int] IDENTITY(1,1) NOT NULL,
+	[nomeOpcional] [varchar](50) NOT NULL,
+ CONSTRAINT [PK_Opcionais] PRIMARY KEY CLUSTERED 
+(
+	[idOpcional] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+
+CREATE TABLE [dbo].[Patrocinadores](
+	[idPatrocinador] [int] IDENTITY(1,1) NOT NULL,
+	[nomePatrocinador] [varchar](50) NOT NULL,
+ CONSTRAINT [PK_Patrocinadores] PRIMARY KEY CLUSTERED 
+(
+	[idPatrocinador] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+CREATE TABLE [dbo].[Regiao](
+	[idRegiao] [int] IDENTITY(1,1) NOT NULL,
+	[nomeRegiao] [varchar](50) NOT NULL,
+ CONSTRAINT [PK_Regiao] PRIMARY KEY CLUSTERED 
+(
+	[idRegiao] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+
