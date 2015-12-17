@@ -1,0 +1,35 @@
+USE [ProjetoKeepWalking]
+GO
+
+/****** Object:  Table [dbo].[Modelo]    Script Date: 17/12/2015 14:53:35 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+SET ANSI_PADDING ON
+GO
+
+CREATE TABLE [dbo].[Modelo](
+	[idModelo] [int] IDENTITY(1,1) NOT NULL,
+	[idMarca] [int] NOT NULL,
+	[descricao] [varchar](50) NOT NULL,
+ CONSTRAINT [PK_Modelo] PRIMARY KEY CLUSTERED 
+(
+	[idModelo] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+SET ANSI_PADDING OFF
+GO
+
+ALTER TABLE [dbo].[Modelo]  WITH CHECK ADD  CONSTRAINT [FK_Modelo_Marca] FOREIGN KEY([idMarca])
+REFERENCES [dbo].[Marca] ([idMarca])
+GO
+
+ALTER TABLE [dbo].[Modelo] CHECK CONSTRAINT [FK_Modelo_Marca]
+GO
+
