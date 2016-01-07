@@ -49,6 +49,7 @@
     <Compile Include="pNewsLetter.cs" />
     <Compile Include="pOpcionais.cs" />
     <Compile Include="pPatrocinador.cs" />
+    <Compile Include="pQuilometragem.cs" />
     <Compile Include="pRegiao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="pUsuario.cs" />
