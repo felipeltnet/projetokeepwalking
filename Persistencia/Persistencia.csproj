@@ -39,8 +39,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="pCambio.cs" />
     <Compile Include="pCategoria.cs" />
     <Compile Include="Conexao.cs" />
+    <Compile Include="pCombustivel.cs" />
     <Compile Include="pCores.cs" />
     <Compile Include="pEstado.cs" />
     <Compile Include="pMensagem.cs" />

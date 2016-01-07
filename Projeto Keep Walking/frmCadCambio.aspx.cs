@@ -11,13 +11,13 @@ namespace Projeto_Keep_Walking
 {
     public partial class frmCadCambio : System.Web.UI.Page
     {
-        DataSet lista;
         protected void Page_Load(object sender, EventArgs e)
         {
+            DataSet lista;
             if (!Page.IsPostBack)
             {
                 Cambio objCambio = new Cambio();
-                lista = objCambio.consultarTodos();
+                lista = objCambio.consultar();
 
                 if (lista != null)
                 {
@@ -29,10 +29,11 @@ namespace Projeto_Keep_Walking
             }
         }
 
-        protected void btnAdicionar_Click(object sender, EventArgs e)
+        protected void btnInserir_Click(object sender, EventArgs e)
         {
             Cambio objCambio = new Cambio();
-            objCambio.inserir(txtCambio.Text);
+            objCambio.adicionar(txtCambio.Text);
+
         }
 
         protected void btnAlterar_Click(object sender, EventArgs e)
@@ -47,12 +48,12 @@ namespace Projeto_Keep_Walking
             objCambio.deletar(lblCambio.Text);
             Response.Redirect(Request.RawUrl);
         }
-        
-        protected void gdvModelo_SelectedIndexChanged(object sender, EventArgs e)
+
+        protected void gdvCambio_SelectedIndexChanged(object sender, EventArgs e)
         {
             GridViewRow row = gdvCambio.SelectedRow;
             lblCambio.Text = Server.HtmlDecode(row.Cells[1].Text);
             txtCambio.Text = Server.HtmlDecode(row.Cells[2].Text);
-        } 
+        }
     }
 }

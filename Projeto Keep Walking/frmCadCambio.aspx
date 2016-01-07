@@ -10,14 +10,15 @@
     <form id="form1" runat="server">
     <div>
     
-        <asp:Label ID="Label1" runat="server" Text="Tipo de Câmbio"></asp:Label>
-        <asp:TextBox ID="txtCambio" runat="server"></asp:TextBox>
+        <asp:Label ID="Label6" runat="server" Text="Tipo de câmbio:"></asp:Label>
+        &nbsp;<asp:TextBox ID="txtCambio" runat="server" ></asp:TextBox>
         <asp:Label ID="lblCambio" runat="server" Text="Label" Visible="False"></asp:Label>
         <br />
-        <asp:Button ID="btnAdicionar" runat="server" OnClick="btnAdicionar_Click" Text="Adicionar" />
-        <asp:Button ID="btnAlterar" runat="server" OnClick="btnAlterar_Click" Text="Alterar" />
-        <asp:Button ID="btnDeletar" runat="server" OnClick="btnDeletar_Click" Text="Deletar" />
-        <br />
+        <asp:Button ID="btnAdicionar" runat="server" OnClick="btnInserir_Click" Text="Adicionar" />
+    
+        <asp:Button ID="btnAlterar" runat="server" Text="Alterar" OnClick="btnAlterar_Click" />
+        <asp:Button ID="btnDeletar" runat="server" Text="Deletar" OnClick="btnDeletar_Click" />
+    
         <br />
         <asp:GridView ID="gdvCambio" runat="server" AllowPaging="True" AutoGenerateSelectButton="True" OnSelectedIndexChanged="gdvModelo_SelectedIndexChanged">
         </asp:GridView>

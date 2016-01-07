@@ -8,37 +8,44 @@ using System.Data;
 
 namespace Persistencia
 {
-    public class pOpcionais
+    public class pCombustivel
     {
-        public void adicionar(String nomeOpcionais)
+        String nomeCombustivel;
+
+        public void adicionar(String nomeCombustivel)
         {
-            String SQL = "INSERT INTO Opcionais(nomeOpcional) VALUES('" + nomeOpcionais + "')";
+            String SQL = "INSERT INTO Combustivel(nomeCombustivel) VALUES('" + nomeCombustivel + "')";
+            Conexao oConexao = new Conexao("SQLServer");
+            oConexao.executeNoQuery(SQL);
+            oConexao.fechaConexao();
+
+        }
+        public void deletar(String idCombustivel)
+        {
+            String SQL = "DELETE Combustivel WHERE idCombustivel =" + idCombustivel;
             Conexao oConexao = new Conexao("SQLServer");
             oConexao.executeNoQuery(SQL);
             oConexao.fechaConexao();
         }
-        public void alterar(String idOpcionais, String nomeOpcionais)
+        public void alterar(String idCombustivel, String nomeCombustivel)
         {
-            String SQL = "UPDATE Opcionais" + " SET nomeOpcionais = '" + nomeOpcionais + "' WHERE idOpcionais = '" + idOpcionais + "')";
-            Conexao oConexao = new Conexao("SQLServer");
-            oConexao.executeNoQuery(SQL);
-            oConexao.fechaConexao();
-        }
-        public void deletar(String idOpcionais)
-        {
-            String SQL = "DELETE Opcionais WHERE idOpcionais = " + idOpcionais;
+            String SQL = "UPDATE Combustivel SET nomeCombustivel = '" + nomeCombustivel + "' WHERE idCombustivel = " + idCombustivel;
             Conexao oConexao = new Conexao("SQLServer");
             oConexao.executeNoQuery(SQL);
             oConexao.fechaConexao();
         }
         public DataSet consultar()
         {
-            String SQL = "SELECT * FROM Opcionais";
-            Conexao oConexao = new Conexao("SQLServer");
-            SqlDataAdapter adapter = new SqlDataAdapter(SQL, oConexao.cn);
+            String SQL = "SELECT * FROM Combustivel";
+
+            Conexao objConexao = new Conexao("SQLServer");
+
+            SqlDataAdapter adapter = new SqlDataAdapter(SQL, objConexao.cn);
             DataSet ds = new DataSet("Tabela");
             adapter.Fill(ds, "Tabela");
-            oConexao.fechaConexao();
+
+            objConexao.fechaConexao();
+
             return ds;
         }
     }

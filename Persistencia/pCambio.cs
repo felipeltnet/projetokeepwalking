@@ -8,37 +8,44 @@ using System.Data;
 
 namespace Persistencia
 {
-    public class pOpcionais
+    public class pCambio
     {
-        public void adicionar(String nomeOpcionais)
+        String nomeCambio;
+
+        public void adicionar(String nomeCambio)
         {
-            String SQL = "INSERT INTO Opcionais(nomeOpcional) VALUES('" + nomeOpcionais + "')";
+            String SQL = "INSERT INTO Cambio(nomeCambio) VALUES('" + nomeCambio + "')";
+            Conexao oConexao = new Conexao("SQLServer");
+            oConexao.executeNoQuery(SQL);
+            oConexao.fechaConexao();
+
+        }
+        public void deletar(String idCambio)
+        {
+            String SQL = "DELETE Cambio WHERE idCambio =" + idCambio;
             Conexao oConexao = new Conexao("SQLServer");
             oConexao.executeNoQuery(SQL);
             oConexao.fechaConexao();
         }
-        public void alterar(String idOpcionais, String nomeOpcionais)
+        public void alterar(String idCambio, String nomeCambio)
         {
-            String SQL = "UPDATE Opcionais" + " SET nomeOpcionais = '" + nomeOpcionais + "' WHERE idOpcionais = '" + idOpcionais + "')";
-            Conexao oConexao = new Conexao("SQLServer");
-            oConexao.executeNoQuery(SQL);
-            oConexao.fechaConexao();
-        }
-        public void deletar(String idOpcionais)
-        {
-            String SQL = "DELETE Opcionais WHERE idOpcionais = " + idOpcionais;
+            String SQL = "UPDATE Cambio SET nomeCambio = '" + nomeCambio + "' WHERE idCambio = " + idCambio;
             Conexao oConexao = new Conexao("SQLServer");
             oConexao.executeNoQuery(SQL);
             oConexao.fechaConexao();
         }
         public DataSet consultar()
         {
-            String SQL = "SELECT * FROM Opcionais";
-            Conexao oConexao = new Conexao("SQLServer");
-            SqlDataAdapter adapter = new SqlDataAdapter(SQL, oConexao.cn);
+            String SQL = "SELECT * FROM Cambio";
+
+            Conexao objConexao = new Conexao("SQLServer");
+
+            SqlDataAdapter adapter = new SqlDataAdapter(SQL, objConexao.cn);
             DataSet ds = new DataSet("Tabela");
             adapter.Fill(ds, "Tabela");
-            oConexao.fechaConexao();
+
+            objConexao.fechaConexao();
+
             return ds;
         }
     }

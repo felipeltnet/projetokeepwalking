@@ -20,7 +20,7 @@ namespace Persistencia
             oConexao.executeNoQuery(SQL);
             oConexao.fechaConexao();
         }
-        public void alterar(String idEmail)
+        public void alterar(String idEmail, String email)
         {
             String SQL = "UPDATE NewsLetter SET email = '" + email + "' WHERE idNewsLetter = '" + idEmail + "'";
             Conexao oConexao = new Conexao("SQLServer");
