@@ -9,7 +9,7 @@
 <body>
     <form id="form1" runat="server">
         <asp:Label ID="Label1" runat="server" Text="Quilometragem :"></asp:Label>
-        <asp:TextBox ID="txtQuilometragem" runat="server" OnTextChanged="txtQuilometragem_TextChanged" Width="58px"></asp:TextBox>
+        <asp:TextBox ID="txtQuilometragem" runat="server"  Width="58px"></asp:TextBox>
         <br />
         <br />
         <asp:Button ID="btnAdicionar" runat="server" OnClick="btnAdicionar_Click" Text="Adicionar" />
@@ -18,7 +18,7 @@
         <asp:Label ID="lblQuilometragem" runat="server" Text="Label" Visible="False"></asp:Label>
         <br />
 
-        <asp:GridView ID="gdvQuilometragem" runat="server" AllowPaging="True" OnSelectedIndexChanged="gdvCategoria_SelectedIndexChanged" AutoGenerateSelectButton="True">
+        <asp:GridView ID="gdvQuilometragem" runat="server" AllowPaging="True" OnSelectedIndexChanged="gdvQuilometragem_SelectedIndexChanged" AutoGenerateSelectButton="True">
         </asp:GridView>
     
     </form>
