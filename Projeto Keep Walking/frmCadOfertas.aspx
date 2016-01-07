@@ -18,7 +18,7 @@
         <asp:Button ID="btnAlterar" runat="server" Text="Alterar" OnClick="btnAlterar_Click" />
         <asp:Button ID="btnDeletar" runat="server" Text="Deletar" OnClick="btnDeletar_Click" />
 
-        <asp:GridView ID="gdvOfertas" runat="server" AllowPaging="True" OnSelectedIndexChanged="gdvCategoria_SelectedIndexChanged" AutoGenerateSelectButton="True">
+        <asp:GridView ID="gdvOfertas" runat="server" AllowPaging="True" OnSelectedIndexChanged="gdvOfertas_SelectedIndexChanged" AutoGenerateSelectButton="True">
         </asp:GridView>
     
     </div>
