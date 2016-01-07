@@ -48,11 +48,13 @@
     <Compile Include="Mensagem.cs" />
     <Compile Include="Modelo.cs" />
     <Compile Include="NewsLetter.cs" />
+    <Compile Include="Ofertas.cs" />
     <Compile Include="Opcionais.cs" />
     <Compile Include="Patrocinador.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Regiao.cs" />
     <Compile Include="Usuario.cs" />
+    <Compile Include="Versao.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Persistencia\Persistencia.csproj">

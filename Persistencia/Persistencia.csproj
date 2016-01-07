@@ -49,11 +49,13 @@
     <Compile Include="pMarca.cs" />
     <Compile Include="pModelo.cs" />
     <Compile Include="pNewsLetter.cs" />
+    <Compile Include="pOfertas.cs" />
     <Compile Include="pOpcionais.cs" />
     <Compile Include="pPatrocinador.cs" />
     <Compile Include="pRegiao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="pUsuario.cs" />
+    <Compile Include="pVersao.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
