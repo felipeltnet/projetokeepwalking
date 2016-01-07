@@ -10,10 +10,10 @@ namespace Negocio
 {
     public class Estado
     {
-        public void adicionar(String nomeEstado)
+        public void adicionar(String idRegiao, String nomeEstado)
         {
             pEstado objEstado = new pEstado();
-            objEstado.adicionar(nomeEstado);
+            objEstado.adicionar(idRegiao, nomeEstado);
         }
         public void deletar(String idEstado)
         {
