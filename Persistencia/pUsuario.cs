@@ -10,6 +10,7 @@ namespace Persistencia
 {
     public class pUsuario
     {
+        public String idUsuario { get; set; }
         public void adicionar(String email, String senha, String nome, String cpf, String sexo, String dataNascimento,
                             String ddd, String telefone, String cidade, String estado, String endereco, String complemento, String cep)
         {
@@ -46,17 +47,22 @@ namespace Persistencia
             objConexao.fechaConexao();
             return ds;
         }
-        public DataSet logar(string nome, string senha)
+        public void logar(String nomeUsuario, String senha)
         {
-            String SQL = "SELECT * FROM  Usuario WHERE nome = '" + nome + "' AND senha ='" + senha + "'";
-            Conexao objConexao = new Conexao("SQLServer");
+            String SQL = "SELECT * FROM Usuarios WHERE nomeUsuario = '" + nomeUsuario
+                + "' AND senha= '" + senha + "'";
 
-            SqlDataAdapter adapter = new SqlDataAdapter(SQL, objConexao.cn);
-            DataSet ds = new DataSet("Tabela");
-            adapter.Fill(ds, "Tabela");
+            Conexao oConexao = new Conexao("SQLServer");
 
-            objConexao.fechaConexao();
-            return ds;        
+            SqlDataReader dr = oConexao.executeReader(SQL);
+
+            while (dr.Read())
+            {
+                this.idUsuario = Convert.ToString(dr["idUSuario"]);
+            }
+            dr.Close();
+
+            oConexao.fechaConexao();
         }
     }
 }

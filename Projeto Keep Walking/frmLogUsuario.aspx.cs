@@ -13,6 +13,22 @@ namespace Projeto_Keep_Walking
         protected void Page_Load(object sender, EventArgs e)
         {
 
-        }        
+        }
+
+        protected void btnEntrar_Click(object sender, EventArgs e)
+        {
+            Usuario objUsuario = new Usuario();
+            objUsuario.logar(txtEmail.Text,txtSenha.Text);
+
+            if(objUsuario.idUsuario != null)
+            {
+                Session["Usuario"] = objUsuario.idUsuario;
+                Response.Redirect("index.aspx");
+            }
+            else 
+            {
+                Response.Redirect(Request.RawUrl);
+            }
+        }            
     }
 }

@@ -10,10 +10,12 @@
     <form id="form1" runat="server">
     <div>
     
-        E-mail:
-        <asp:TextBox ID="txtEmail" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
-&nbsp;&nbsp;&nbsp; Senha:<asp:TextBox ID="txtSenha" runat="server"></asp:TextBox>
-        <asp:Button ID="btnOk" runat="server" OnClick="btnOk_Click" Text="OK" Width="69px" />
+        <asp:Label ID="Label2" runat="server" Text="E-mail"></asp:Label>
+        :
+        <asp:TextBox ID="txtEmail" runat="server" OnTextChanged="TextBox1_TextChanged" TextMode="Email"></asp:TextBox>
+&nbsp;&nbsp;&nbsp;<asp:Label ID="Label1" runat="server" Text="Senha"></asp:Label>
+&nbsp;:<asp:TextBox ID="txtSenha" runat="server" TextMode="Password"></asp:TextBox>
+        <asp:Button ID="btnEntrar" runat="server" OnClick="btnEntrar_Click" Text="Entrar" />
     
     </div>
     </form>
