@@ -31,7 +31,7 @@ namespace Projeto_Keep_Walking
         protected void btnAdicionar_Click(object sender, EventArgs e)
         {
             Estado objEstado = new Estado();
-            objEstado.adicionar(txtIdRegiao.Text, txtEstado.Text);
+            objEstado.adicionar(lblEstado.Text, txtEstado.Text);
         }
 
         protected void btnDeletar_Click(object sender, EventArgs e)

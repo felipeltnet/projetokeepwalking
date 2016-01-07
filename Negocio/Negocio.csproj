@@ -39,7 +39,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cambio.cs" />
     <Compile Include="Categoria.cs" />
     <Compile Include="Combustivel.cs" />
     <Compile Include="Cores.cs" />

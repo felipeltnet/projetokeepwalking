@@ -38,19 +38,21 @@ namespace Projeto_Keep_Walking
         protected void btnDeletar_Click(object sender, EventArgs e)
         {
             NewsLetter objNewsLetter = new NewsLetter();
-            objNewsLetter.alterar(txtidEmail.Text);
+            objNewsLetter.deletar(lblNewsLetter.Text);
+            Response.Redirect(Request.RawUrl);
         }
 
         protected void btnAlterar_Click(object sender, EventArgs e)
         {
             NewsLetter objNewsLetter = new NewsLetter();
-            objNewsLetter.alterar(txtidEmail.Text);
+            objNewsLetter.alterar(lblNewsLetter.Text, txtEmail.Text);
+            Response.Redirect(Request.RawUrl);
         }
 
         protected void gdvNewsLetter_SelectedIndexChanged(object sender, EventArgs e)
         {
             GridViewRow row = gdvNewsLetter.SelectedRow;
-            txtidEmail.Text = Server.HtmlDecode(row.Cells[1].Text);
+            lblNewsLetter.Text = Server.HtmlDecode(row.Cells[1].Text);
             txtEmail.Text = Server.HtmlDecode(row.Cells[2].Text);
         }
 
