@@ -12,7 +12,7 @@ namespace Persistencia
     {
         public void adicionar(String nomeOpcionais)
         {
-            String SQL = "INSERT INTO Opcionais(nomeOpcionais) VALUES('" + nomeOpcionais + "')";
+            String SQL = "INSERT INTO Opcionais(nomeOpcional) VALUES('" + nomeOpcionais + "')";
             Conexao oConexao = new Conexao("SQLServer");
             oConexao.executeNoQuery(SQL);
             oConexao.fechaConexao();
