@@ -10,47 +10,33 @@ namespace Negocio
 {
     public class Usuario
     {
-        String email;
-        String senha;
-        String nome;
-        String cpf;
-        String sexo;
-        DateTime dataNascimento;
-        String telefone;
-        String cidade;
-        String estado;
-        String endereco;
-        String complemento;
-        String cep;
-        String ddd;
-
+        public String idUsuario { get; set; }
         public void adicionar(String email, String senha, String nome, String cpf, String sexo, String dataNascimento,
                             String ddd, String telefone, String cidade, String estado, String endereco, String complemento, String cep)
         {
             pUsuario objUsuario = new pUsuario();
             objUsuario.adicionar(email, senha, nome, cpf, sexo, dataNascimento, ddd, telefone, cidade, estado, endereco, complemento, cep);
         }
-        public void alterar(String email, String senha)
+        public void alterar(String idUsuario, String senha)
         {
             pUsuario objUsuario = new pUsuario();
-            objUsuario.alterar(email, senha);
+            objUsuario.alterar(idUsuario, senha);
         }
-        public void deletar(String email, String senha)
+        public void deletar(String idUsuario)
         {
             pUsuario objUsuario = new pUsuario();
-            objUsuario.deletar(email, senha);
+            objUsuario.deletar(idUsuario);
         }
         public DataSet consultar()
         {
             pUsuario objUsuario = new pUsuario();
             return objUsuario.consultar();
         }
-        public String logar(String nome, String senha)
+        public void logar(String email, String senha)
         {
             pUsuario objUsuario = new pUsuario();
-            objUsuario.logar(nome,senha);
-            return "";
+            objUsuario.logar(email, senha);
+            this.idUsuario = objUsuario.idUsuario;
         }
-    }
-
+    }    
 }

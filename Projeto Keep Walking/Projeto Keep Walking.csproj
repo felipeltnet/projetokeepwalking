@@ -85,6 +85,7 @@
     <Content Include="frmNewsLetter.aspx" />
     <Content Include="frmOpcionais.aspx" />
     <Content Include="frmPatrocinador.aspx" />
+    <Content Include="frmQuilometragem.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -199,6 +200,13 @@
     </Compile>
     <Compile Include="frmPatrocinador.aspx.designer.cs">
       <DependentUpon>frmPatrocinador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuilometragem.aspx.cs">
+      <DependentUpon>frmQuilometragem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmQuilometragem.aspx.designer.cs">
+      <DependentUpon>frmQuilometragem.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

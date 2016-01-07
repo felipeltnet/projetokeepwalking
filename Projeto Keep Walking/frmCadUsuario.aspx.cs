@@ -39,7 +39,8 @@ namespace Projeto_Keep_Walking
         protected void btnDeletar_Click(object sender, EventArgs e)
         {
             Usuario objUsuario = new Usuario();
-            objUsuario.deletar(txtEmail.Text, txtSenha.Text);
+            objUsuario.deletar(lblidUsuario.Text);
+            Response.Redirect(Request.RawUrl);
         }
 
         protected void gdvUsuario_SelectedIndexChanged(object sender, EventArgs e)
@@ -52,7 +53,8 @@ namespace Projeto_Keep_Walking
         protected void btnAlterar_Click(object sender, EventArgs e)
         {
             Usuario objUsuario = new Usuario();
-            objUsuario.alterar(txtEmail.Text, txtSenha.Text);
+            objUsuario.alterar(lblidUsuario.Text, txtSenha.Text);
+            Response.Redirect(Request.RawUrl);
         }
     }
 }
