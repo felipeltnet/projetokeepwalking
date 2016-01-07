@@ -12,9 +12,21 @@ namespace Projeto_Keep_Walking
 {
     public partial class frmMensagem : System.Web.UI.Page
     {
+        DataSet lista;
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+            if (!Page.IsPostBack)
+            {
+                Mensagem objMensagem = new Mensagem();
+                lista = objMensagem.consultar();
+
+                if (lista != null)
+                {
+                    gdvMensagem.DataSource = lista;
+                    gdvMensagem.DataMember = "Tabela";
+                    gdvMensagem.DataBind();
+                }
+            }
         }        
 
         protected void btnDeletar_Click(object sender, EventArgs e)
@@ -29,14 +41,6 @@ namespace Projeto_Keep_Walking
             Mensagem objMensagem = new Mensagem();
             objMensagem.alterar(lblMensagem.Text,txtAssunto.Text, txtMensagem.Text);
         }
-
-        protected void btnConsultar_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        
-
         protected void btnAdicionar_Click1(object sender, EventArgs e)
         {
             Mensagem objMensagem = new Mensagem();
