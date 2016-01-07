@@ -76,8 +76,10 @@
     <Content Include="frmCadEstado.aspx" />
     <Content Include="frmCadMarca.aspx" />
     <Content Include="frmCadModelo.aspx" />
+    <Content Include="frmCadOfertas.aspx" />
     <Content Include="frmCadRegiao.aspx" />
     <Content Include="frmCadUsuario.aspx" />
+    <Content Include="frmCadVersao.aspx" />
     <Content Include="frmLogUsuario.aspx" />
     <Content Include="frmMensagem.aspx" />
     <Content Include="frmNewsLetter.aspx" />
@@ -136,6 +138,13 @@
     <Compile Include="frmCadModelo.aspx.designer.cs">
       <DependentUpon>frmCadModelo.aspx</DependentUpon>
     </Compile>
+    <Compile Include="frmCadOfertas.aspx.cs">
+      <DependentUpon>frmCadOfertas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCadOfertas.aspx.designer.cs">
+      <DependentUpon>frmCadOfertas.aspx</DependentUpon>
+    </Compile>
     <Compile Include="frmCadRegiao.aspx.cs">
       <DependentUpon>frmCadRegiao.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -149,6 +158,13 @@
     </Compile>
     <Compile Include="frmCadUsuario.aspx.designer.cs">
       <DependentUpon>frmCadUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadVersao.aspx.cs">
+      <DependentUpon>frmCadVersao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCadVersao.aspx.designer.cs">
+      <DependentUpon>frmCadVersao.aspx</DependentUpon>
     </Compile>
     <Compile Include="frmLogUsuario.aspx.cs">
       <DependentUpon>frmLogUsuario.aspx</DependentUpon>
