@@ -51,7 +51,7 @@
         <asp:Button ID="btnCadastrar" runat="server" OnClick="btnCadastrar_Click" Text="Cadastrar" />
         &nbsp;<asp:Button ID="btnDeletar" runat="server" OnClick="btnDeletar_Click" Text="Deletar" />
 &nbsp;<asp:Button ID="btnAlterar" runat="server" Text="Alterar" OnClick="btnAlterar_Click" />
-        <asp:Label ID="lblidUsuario" runat="server" Text="Label"></asp:Label>
+        <asp:Label ID="lblidUsuario" runat="server" Text="Label" Visible="False"></asp:Label>
         <br />
         <br />
         <asp:GridView ID="gdvUsuario" runat="server" AllowPaging="True" BackColor="White" BorderColor="#3366CC" BorderStyle="None" BorderWidth="1px" CellPadding="4" AutoGenerateSelectButton="True" OnSelectedIndexChanged="gdvUsuario_SelectedIndexChanged">
