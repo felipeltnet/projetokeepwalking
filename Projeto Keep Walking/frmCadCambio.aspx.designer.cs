@@ -10,7 +10,7 @@
 namespace Projeto_Keep_Walking {
     
     
-    public partial class frmMensagem {
+    public partial class frmCadCambio {
         
         /// <summary>
         /// form1 control.
@@ -22,49 +22,31 @@ namespace Projeto_Keep_Walking {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// Label2 control.
+        /// Label1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
-        /// txtAssunto control.
+        /// txtCambio control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtAssunto;
+        protected global::System.Web.UI.WebControls.TextBox txtCambio;
         
         /// <summary>
-        /// Label3 control.
+        /// lblCambio control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label3;
-        
-        /// <summary>
-        /// txtMensagem control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtMensagem;
-        
-        /// <summary>
-        /// lblMensagem control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblMensagem;
+        protected global::System.Web.UI.WebControls.Label lblCambio;
         
         /// <summary>
         /// btnAdicionar control.
@@ -76,15 +58,6 @@ namespace Projeto_Keep_Walking {
         protected global::System.Web.UI.WebControls.Button btnAdicionar;
         
         /// <summary>
-        /// btnDeletar control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnDeletar;
-        
-        /// <summary>
         /// btnAlterar control.
         /// </summary>
         /// <remarks>
@@ -94,12 +67,21 @@ namespace Projeto_Keep_Walking {
         protected global::System.Web.UI.WebControls.Button btnAlterar;
         
         /// <summary>
-        /// gdvMensagem control.
+        /// btnDeletar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gdvMensagem;
+        protected global::System.Web.UI.WebControls.Button btnDeletar;
+        
+        /// <summary>
+        /// gdvCambio control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gdvCambio;
     }
 }

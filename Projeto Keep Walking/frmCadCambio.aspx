@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="frmCadEstado.aspx.cs" Inherits="Projeto_Keep_Walking.frmCadEstado" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="frmCadCambio.aspx.cs" Inherits="Projeto_Keep_Walking.frmCadCambio" %>
 
 <!DOCTYPE html>
 
@@ -10,16 +10,16 @@
     <form id="form1" runat="server">
     <div>
     
-        <asp:Label ID="Label1" runat="server" Text="Estado"></asp:Label>
-        :<asp:TextBox ID="txtEstado" runat="server"></asp:TextBox>
-        <asp:Label ID="lblEstado" runat="server" Text="Label" Visible="False"></asp:Label>
-        <br />
+        <asp:Label ID="Label1" runat="server" Text="Tipo de Câmbio"></asp:Label>
+        <asp:TextBox ID="txtCambio" runat="server"></asp:TextBox>
+        <asp:Label ID="lblCambio" runat="server" Text="Label" Visible="False"></asp:Label>
         <br />
         <asp:Button ID="btnAdicionar" runat="server" OnClick="btnAdicionar_Click" Text="Adicionar" />
         <asp:Button ID="btnAlterar" runat="server" OnClick="btnAlterar_Click" Text="Alterar" />
         <asp:Button ID="btnDeletar" runat="server" OnClick="btnDeletar_Click" Text="Deletar" />
         <br />
-        <asp:GridView ID="gdvEstado" runat="server" AllowPaging="True" AutoGenerateSelectButton="True" OnSelectedIndexChanged="gdvEstado_SelectedIndexChanged">
+        <br />
+        <asp:GridView ID="gdvCambio" runat="server" AllowPaging="True" AutoGenerateSelectButton="True" OnSelectedIndexChanged="gdvModelo_SelectedIndexChanged">
         </asp:GridView>
     
     </div>

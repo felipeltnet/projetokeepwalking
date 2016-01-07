@@ -12,9 +12,9 @@ namespace Persistencia
     {
         String nomeMarca;
 
-        public void adicionar(String nomeMarca)
+        public void adicionar(String idCategoria, String nomeMarca)
         {
-            String SQL = "INSERT INTO Marca(nomeMarca) VALUES('"+nomeMarca+"')";
+            String SQL = "INSERT INTO Marca(idCategoria, nomeMarca) VALUES('" + idCategoria + "','" + nomeMarca + "')";
             Conexao objConexao = new Conexao("SQLServer");
             objConexao.executeNoQuery(SQL);
             objConexao.fechaConexao();

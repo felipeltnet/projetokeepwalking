@@ -12,9 +12,7 @@
         <br />
         E-mail:
         <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
-        <br />
-        idEmail:
-        <asp:TextBox ID="txtidEmail" runat="server" OnTextChanged="txtEmail0_TextChanged"></asp:TextBox>
+        <asp:Label ID="lblNewsLetter" runat="server" Text="Label" Visible="False"></asp:Label>
         <br />
         <br />
         <asp:Button ID="btnAdicionar" runat="server" OnClick="btnAdicionar_Click" Text="Adicionar" />

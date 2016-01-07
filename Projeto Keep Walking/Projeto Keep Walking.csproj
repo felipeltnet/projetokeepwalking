@@ -57,6 +57,18 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="frmCadCambio.aspx" />
+    <Content Include="documentacao\SQL\Categoria.sql" />
+    <Content Include="documentacao\SQL\Cores.sql" />
+    <Content Include="documentacao\SQL\Estado.sql" />
+    <Content Include="documentacao\SQL\Marca.sql" />
+    <Content Include="documentacao\SQL\Mensagem.sql" />
+    <Content Include="documentacao\SQL\Modelo.sql" />
+    <Content Include="documentacao\SQL\Newsletter.sql" />
+    <Content Include="documentacao\SQL\Opcionais.sql" />
+    <Content Include="documentacao\SQL\Patrocinadores.sql" />
+    <Content Include="documentacao\SQL\Regiao.sql" />
+    <Content Include="documentacao\SQL\Usuarios.sql" />
     <Content Include="documentacao\Comando completo.txt" />
     <Content Include="frmCadCategoria.aspx" />
     <Content Include="frmCadCores.aspx" />
@@ -73,6 +85,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmCadCambio.aspx.cs">
+      <DependentUpon>frmCadCambio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCadCambio.aspx.designer.cs">
+      <DependentUpon>frmCadCambio.aspx</DependentUpon>
+    </Compile>
     <Compile Include="frmCadCategoria.aspx.cs">
       <DependentUpon>frmCadCategoria.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

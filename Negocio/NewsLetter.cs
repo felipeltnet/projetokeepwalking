@@ -10,8 +10,6 @@ namespace Negocio
 {
     public class NewsLetter
     {
-        String email;
-        String idEmail;
 
         public void adicionar(String email)
         {
@@ -23,10 +21,10 @@ namespace Negocio
             pNewsLetter objNewsLetter = new pNewsLetter();
             objNewsLetter.deletar(idEmail);
         }
-        public void alterar(String idEmail)
+        public void alterar(String idEmail, String email)
         {
             pNewsLetter objNewsLetter = new pNewsLetter();
-            objNewsLetter.alterar(idEmail);
+            objNewsLetter.alterar(idEmail, email);
         }
         public DataSet consultar()
         {

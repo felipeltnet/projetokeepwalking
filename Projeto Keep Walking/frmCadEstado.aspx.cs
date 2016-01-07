@@ -31,7 +31,7 @@ namespace Projeto_Keep_Walking
         protected void btnAdicionar_Click(object sender, EventArgs e)
         {
             Estado objEstado = new Estado();
-            objEstado.adicionar(txtEstado.Text);
+            objEstado.adicionar(lblEstado.Text, txtEstado.Text);
         }
 
         protected void btnDeletar_Click(object sender, EventArgs e)
@@ -52,7 +52,8 @@ namespace Projeto_Keep_Walking
             GridViewRow row = gdvEstado.SelectedRow;
             lblEstado.Text = Server.HtmlDecode(row.Cells[1].Text);
             txtEstado.Text = Server.HtmlDecode(row.Cells[2].Text);
-        }       
+        }
+
                 
     }
 }
