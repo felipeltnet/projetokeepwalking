@@ -10,6 +10,10 @@
     <form id="form1" runat="server">
     <div>
     
+        id Categoria:
+        <asp:TextBox ID="txtIdCategoria" runat="server"></asp:TextBox>
+        <br />
+    
         <asp:Label ID="Label1" runat="server" Text="Nome da Marca:"></asp:Label>
         <asp:TextBox ID="txtNomeMarca" runat="server"></asp:TextBox>
         <asp:Label ID="lblMarca" runat="server" Text="Label" Visible="False"></asp:Label>
