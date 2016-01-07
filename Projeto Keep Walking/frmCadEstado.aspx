@@ -10,9 +10,6 @@
     <form id="form1" runat="server">
     <div>
     
-        id Região:<asp:TextBox ID="txtIdRegiao" runat="server"></asp:TextBox>
-        <br />
-    
         <asp:Label ID="Label1" runat="server" Text="Estado"></asp:Label>
         :<asp:TextBox ID="txtEstado" runat="server"></asp:TextBox>
         <asp:Label ID="lblEstado" runat="server" Text="Label" Visible="False"></asp:Label>
