@@ -12,10 +12,10 @@ namespace Negocio
     {
         String nomeMarca;
 
-        public void adicionar(String nomeMarca)
+        public void adicionar(String idCategoria, String nomeMarca)
         {
             pMarca objMarca = new pMarca();
-            objMarca.adicionar(nomeMarca);
+            objMarca.adicionar(idCategoria, nomeMarca);
         }
         public void alterar(String nomeMarca, String idMarca)
         {
