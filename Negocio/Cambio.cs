@@ -10,12 +10,12 @@ namespace Negocio
 {
     public class Cambio
     {
-        String cambio;
+        String nomeCambio;
 
         public void inserir(String cambio)
         {
             pCambio objCambio = new pCambio();
-            objCambio.inserir(cambio);
+            objCambio.inserir(nomeCambio);
         }
 
         public void alterar(String idCambio, String nomeCambio)

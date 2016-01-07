@@ -10,11 +10,11 @@ namespace Persistencia
 {
     public class pCambio
     {
-        String cambio;
+        String nomeCambio;
 
-        public void inserir(String cambio)
+        public void inserir(String nomeCambio)
         {
-            String SQL = "INSERT INTO Cambio(idMarca, cambio) VALUES (1, '" + cambio + "')";
+            String SQL = "INSERT INTO Cambio(idMarca, cambio) VALUES (1, '" + nomeCambio + "')";
             Conexao oConexao = new Conexao("SQLServer");
             oConexao.executeNoQuery(SQL);
             oConexao.fechaConexao();
