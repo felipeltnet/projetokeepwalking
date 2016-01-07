@@ -10,12 +10,11 @@ namespace Negocio
 {
     public class Modelo
     {
-        String descricao;
 
-        public void inserir(String descricao)
+        public void inserir(String idMarca, String descricao)
         {
             pModelo objModelo = new pModelo();
-            objModelo.inserir(descricao); 
+            objModelo.inserir(idMarca, descricao); 
         }
 
         public void alterar(String idModelo, String nomeModelo)

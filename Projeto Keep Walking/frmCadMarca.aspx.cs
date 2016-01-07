@@ -32,7 +32,7 @@ namespace Projeto_Keep_Walking
         protected void btnAdicionar_Click(object sender, EventArgs e)
         {
             Marca objMarca = new Marca();
-            objMarca.adicionar(txtNomeMarca.Text);
+            objMarca.adicionar(txtIdCategoria.Text , txtNomeMarca.Text);
         }
 
         protected void gdvMarca_SelectedIndexChanged(object sender, EventArgs e)
