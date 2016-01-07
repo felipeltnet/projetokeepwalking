@@ -69,7 +69,9 @@
     <Content Include="documentacao\SQL\Patrocinadores.sql" />
     <Content Include="documentacao\SQL\Regiao.sql" />
     <Content Include="documentacao\SQL\Usuarios.sql" />
+    <Content Include="documentacao\Comando completo.txt" />
     <Content Include="frmCadCategoria.aspx" />
+    <Content Include="frmCadCombustivel.aspx" />
     <Content Include="frmCadCores.aspx" />
     <Content Include="frmCadEstado.aspx" />
     <Content Include="frmCadMarca.aspx" />
@@ -97,6 +99,13 @@
     </Compile>
     <Compile Include="frmCadCategoria.aspx.designer.cs">
       <DependentUpon>frmCadCategoria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadCombustivel.aspx.cs">
+      <DependentUpon>frmCadCombustivel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCadCombustivel.aspx.designer.cs">
+      <DependentUpon>frmCadCombustivel.aspx</DependentUpon>
     </Compile>
     <Compile Include="frmCadCores.aspx.cs">
       <DependentUpon>frmCadCores.aspx</DependentUpon>
