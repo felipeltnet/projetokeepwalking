@@ -8,7 +8,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        Cadastrar NewsLetter<br />
+        <br />
         <br />
         E-mail:
         <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
