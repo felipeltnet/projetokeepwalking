@@ -48,11 +48,6 @@ namespace Projeto_Keep_Walking
             Response.Redirect(Request.RawUrl);
         }
 
-        protected void btnConsultar_Click(object sender, EventArgs e)
-        {
-
-        }
-
         protected void gdvPatrocinador_SelectedIndexChanged(object sender, EventArgs e)
         {
             GridViewRow row = gdvPatrocinador.SelectedRow;

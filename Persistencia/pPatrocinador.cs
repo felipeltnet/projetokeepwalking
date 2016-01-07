@@ -12,28 +12,28 @@ namespace Persistencia
     {
         public void adicionar(String nomePatrocinador)
         {
-            String SQL = "INSERT INTO Patrocinador(nomePatrocinador) VALUES('" + nomePatrocinador + "')";
+            String SQL = "INSERT INTO Patrocinadores(nomePatrocinador) VALUES('" + nomePatrocinador + "')";
             Conexao oConexao = new Conexao("SQLServer");
             oConexao.executeNoQuery(SQL);
             oConexao.fechaConexao();
         }
         public void alterar(String idPatrocinador, String nomePatrocinador)
         {
-            String SQL = "UPDATE Patrocinador" + " SET nomePatrocinador = '" + nomePatrocinador + "' WHERE idPatrocinador = '" + idPatrocinador + "')";
+            String SQL = "UPDATE Patrocinadores" + " SET nomePatrocinador = '" + nomePatrocinador + "' WHERE idPatrocinador = '" + idPatrocinador + "')";
             Conexao oConexao = new Conexao("SQLServer");
             oConexao.executeNoQuery(SQL);
             oConexao.fechaConexao();
         }
         public void deletar(String idPatrocinador)
         {
-            String SQL = "DELETE Patrocinador WHERE idPatrocinador = "+ idPatrocinador;
+            String SQL = "DELETE Patrocinadores WHERE idPatrocinador = "+ idPatrocinador;
             Conexao oConexao = new Conexao("SQLServer");
             oConexao.executeNoQuery(SQL);
             oConexao.fechaConexao();
         }
         public DataSet consultar()
         {
-            String SQL = "SELECT * FROM Patrocinador";
+            String SQL = "SELECT * FROM Patrocinadores";
             Conexao oConexao = new Conexao("SQLServer");
             SqlDataAdapter adapter = new SqlDataAdapter(SQL, oConexao.cn);
             DataSet ds = new DataSet("Tabela");
