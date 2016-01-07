@@ -14,29 +14,29 @@ namespace Persistencia
         public void adicionar(String email, String senha, String nome, String cpf, String sexo, String dataNascimento,
                             String ddd, String telefone, String cidade, String estado, String endereco, String complemento, String cep)
         {
-            String SQL = "INSERT INTO Usuario(email, senha, nome, cpf, sexo, dataNascimento, ddd, telefone, cidade, estado, endereco, complemento, cep) VALUES('"+ email +"','" + senha + "','" + 
+            String SQL = "INSERT INTO Usuarios(email, senha, nome, cpf, sexo, dataNascimento, ddd, telefone, cidade, estado, endereco, complemento, cep) VALUES('"+ email +"','" + senha + "','" + 
                         nome + "','" + cpf + "','" + sexo + "','" + dataNascimento + "','" + ddd + "','" + telefone + "','" + cidade + "','" + estado + "','" + endereco + "','" + complemento + "','" + cep + "')";
             Conexao objConexao = new Conexao("SQLServer");
             objConexao.executeNoQuery(SQL);
             objConexao.fechaConexao();
         }
-        public void alterar(String email, String senha)
+        public void alterar(String idUsuario, String senha)
         {
-            String SQL = "UPDATE Usuario  SET senha = '" + senha + "' WHERE email = '" + email + "'";
+            String SQL = "UPDATE Usuarios  SET senha = '" + senha + "' WHERE idUsuario = '" + idUsuario + "'";
             Conexao objConexao = new Conexao("SQLServer");
             objConexao.executeNoQuery(SQL);
             objConexao.fechaConexao();
         }
         public void deletar(String idUsuario)
         {
-            String SQL = "DELETE FROM Usuario WHERE idUsuario = '" + idUsuario + "'";
+            String SQL = "DELETE FROM Usuarios WHERE idUsuario = '" + idUsuario + "'";
             Conexao objConexao = new Conexao("SQLServer");
             objConexao.executeNoQuery(SQL);
             objConexao.fechaConexao();
         }
         public DataSet consultar()
         {
-            String SQL = "SELECT * FROM Usuario";
+            String SQL = "SELECT * FROM Usuarios";
 
             Conexao objConexao = new Conexao("SQLServer");
 
@@ -49,8 +49,7 @@ namespace Persistencia
         }
         public void logar(String nomeUsuario, String senha)
         {
-            String SQL = "SELECT * FROM Usuarios WHERE nomeUsuario = '" + nomeUsuario
-                + "' AND senha= '" + senha + "'";
+            String SQL = "SELECT * FROM Usuarios WHERE nome = '" + nomeUsuario + "' AND senha= '" + senha + "'";
 
             Conexao oConexao = new Conexao("SQLServer");
 
