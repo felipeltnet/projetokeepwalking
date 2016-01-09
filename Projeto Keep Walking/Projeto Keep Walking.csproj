@@ -212,6 +212,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="documentacao\Desenho de Classes.jude" />
+    <Content Include="documentacao\ListaDeUserStorys_KeepWalking-norton-note.ods" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
