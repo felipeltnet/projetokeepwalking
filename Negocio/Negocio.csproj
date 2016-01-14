@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="Cambio.cs" />
     <Compile Include="Categoria.cs" />
+    <Compile Include="Cidade.cs" />
     <Compile Include="Combustivel.cs" />
     <Compile Include="Cores.cs" />
     <Compile Include="Estado.cs" />

@@ -11,6 +11,7 @@ namespace Projeto_Keep_Walking
 {
     public partial class frmCadOfertas : System.Web.UI.Page
     {
+        DataSet lista;
         protected void Page_Load(object sender, EventArgs e)
         {
             DataSet lista;

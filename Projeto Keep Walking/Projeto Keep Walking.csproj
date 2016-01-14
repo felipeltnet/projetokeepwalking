@@ -57,6 +57,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="documentacao\Diagrama Final.png" />
     <Content Include="documentacao\SQL\Categoria.sql" />
     <Content Include="documentacao\SQL\Cores.sql" />
     <Content Include="documentacao\SQL\Estado.sql" />
@@ -71,6 +72,7 @@
     <Content Include="documentacao\Comando completo.txt" />
     <Content Include="frmCadCambio.aspx" />
     <Content Include="frmCadCategoria.aspx" />
+    <Content Include="frmCadCidade.aspx" />
     <Content Include="frmCadCombustivel.aspx" />
     <Content Include="frmCadCores.aspx" />
     <Content Include="frmCadEstado.aspx" />
@@ -80,6 +82,8 @@
     <Content Include="frmCadRegiao.aspx" />
     <Content Include="frmCadUsuario.aspx" />
     <Content Include="frmCadVersao.aspx" />
+    <Content Include="frmListarNewsLetter.aspx" />
+    <Content Include="frmListarOfertas.aspx" />
     <Content Include="frmLogUsuario.aspx" />
     <Content Include="frmMensagem.aspx" />
     <Content Include="frmNewsLetter.aspx" />
@@ -102,6 +106,13 @@
     </Compile>
     <Compile Include="frmCadCategoria.aspx.designer.cs">
       <DependentUpon>frmCadCategoria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadCidade.aspx.cs">
+      <DependentUpon>frmCadCidade.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCadCidade.aspx.designer.cs">
+      <DependentUpon>frmCadCidade.aspx</DependentUpon>
     </Compile>
     <Compile Include="frmCadCombustivel.aspx.cs">
       <DependentUpon>frmCadCombustivel.aspx</DependentUpon>
@@ -165,6 +176,20 @@
     </Compile>
     <Compile Include="frmCadVersao.aspx.designer.cs">
       <DependentUpon>frmCadVersao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmListarNewsLetter.aspx.cs">
+      <DependentUpon>frmListarNewsLetter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmListarNewsLetter.aspx.designer.cs">
+      <DependentUpon>frmListarNewsLetter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmListarOfertas.aspx.cs">
+      <DependentUpon>frmListarOfertas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmListarOfertas.aspx.designer.cs">
+      <DependentUpon>frmListarOfertas.aspx</DependentUpon>
     </Compile>
     <Compile Include="frmLogUsuario.aspx.cs">
       <DependentUpon>frmLogUsuario.aspx</DependentUpon>
