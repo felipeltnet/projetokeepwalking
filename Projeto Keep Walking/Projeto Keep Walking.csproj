@@ -57,6 +57,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="documentacao\Diagrama Final.png" />
     <Content Include="documentacao\SQL\Categoria.sql" />
     <Content Include="documentacao\SQL\Cores.sql" />
     <Content Include="documentacao\SQL\Estado.sql" />
