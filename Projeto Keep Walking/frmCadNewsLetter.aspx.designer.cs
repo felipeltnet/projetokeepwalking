@@ -10,7 +10,7 @@
 namespace Projeto_Keep_Walking {
     
     
-    public partial class frmLogUsuario {
+    public partial class frmCadNewsLetter {
         
         /// <summary>
         /// form1 control.
@@ -31,13 +31,13 @@ namespace Projeto_Keep_Walking {
         protected global::System.Web.UI.WebControls.Label Label2;
         
         /// <summary>
-        /// txtEmail control.
+        /// txtEmailOrigen control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtEmail;
+        protected global::System.Web.UI.WebControls.TextBox txtEmailOrigen;
         
         /// <summary>
         /// Label1 control.
@@ -49,30 +49,57 @@ namespace Projeto_Keep_Walking {
         protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
-        /// txtSenha control.
+        /// txtEmailDestino control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSenha;
+        protected global::System.Web.UI.WebControls.TextBox txtEmailDestino;
         
         /// <summary>
-        /// btnEntrar control.
+        /// Label3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnEntrar;
+        protected global::System.Web.UI.WebControls.Label Label3;
         
         /// <summary>
-        /// Button1 control.
+        /// txtTituloMsg control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.TextBox txtTituloMsg;
+        
+        /// <summary>
+        /// Label4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label4;
+        
+        /// <summary>
+        /// txtCorpoMsg control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtCorpoMsg;
+        
+        /// <summary>
+        /// btnEnviar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnEnviar;
     }
 }

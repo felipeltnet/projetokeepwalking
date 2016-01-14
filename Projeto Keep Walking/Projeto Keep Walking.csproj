@@ -144,6 +144,13 @@
     <Compile Include="frmCadUsuario.aspx.designer.cs">
       <DependentUpon>frmCadUsuario.aspx</DependentUpon>
     </Compile>
+    <Compile Include="frmCadVersao.aspx.cs">
+      <DependentUpon>frmCadVersao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCadVersao.aspx.designer.cs">
+      <DependentUpon>frmCadVersao.aspx</DependentUpon>
+    </Compile>
     <Compile Include="frmListarOfertas.aspx.cs">
       <DependentUpon>frmListarOfertas.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
