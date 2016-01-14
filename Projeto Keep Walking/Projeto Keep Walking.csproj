@@ -72,6 +72,7 @@
     <Content Include="documentacao\Comando completo.txt" />
     <Content Include="frmCadCambio.aspx" />
     <Content Include="frmCadCategoria.aspx" />
+    <Content Include="frmCadCidade.aspx" />
     <Content Include="frmCadCombustivel.aspx" />
     <Content Include="frmCadCores.aspx" />
     <Content Include="frmCadEstado.aspx" />
@@ -88,6 +89,7 @@
     <Content Include="frmNewsLetter.aspx" />
     <Content Include="frmOpcionais.aspx" />
     <Content Include="frmPatrocinador.aspx" />
+    <Content Include="frmPublicidade.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -104,6 +106,13 @@
     </Compile>
     <Compile Include="frmCadCategoria.aspx.designer.cs">
       <DependentUpon>frmCadCategoria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadCidade.aspx.cs">
+      <DependentUpon>frmCadCidade.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCadCidade.aspx.designer.cs">
+      <DependentUpon>frmCadCidade.aspx</DependentUpon>
     </Compile>
     <Compile Include="frmCadCombustivel.aspx.cs">
       <DependentUpon>frmCadCombustivel.aspx</DependentUpon>
@@ -216,6 +225,13 @@
     </Compile>
     <Compile Include="frmPatrocinador.aspx.designer.cs">
       <DependentUpon>frmPatrocinador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmPublicidade.aspx.cs">
+      <DependentUpon>frmPublicidade.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmPublicidade.aspx.designer.cs">
+      <DependentUpon>frmPublicidade.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
