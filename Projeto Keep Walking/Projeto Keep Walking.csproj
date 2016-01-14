@@ -80,6 +80,7 @@
     <Content Include="frmCadRegiao.aspx" />
     <Content Include="frmCadUsuario.aspx" />
     <Content Include="frmCadVersao.aspx" />
+    <Content Include="frmListarOfertas.aspx" />
     <Content Include="frmLogUsuario.aspx" />
     <Content Include="frmMensagem.aspx" />
     <Content Include="frmNewsLetter.aspx" />
@@ -164,6 +165,13 @@
     </Compile>
     <Compile Include="frmCadVersao.aspx.designer.cs">
       <DependentUpon>frmCadVersao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmListarOfertas.aspx.cs">
+      <DependentUpon>frmListarOfertas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmListarOfertas.aspx.designer.cs">
+      <DependentUpon>frmListarOfertas.aspx</DependentUpon>
     </Compile>
     <Compile Include="frmLogUsuario.aspx.cs">
       <DependentUpon>frmLogUsuario.aspx</DependentUpon>
