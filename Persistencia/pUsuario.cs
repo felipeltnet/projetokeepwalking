@@ -11,6 +11,9 @@ namespace Persistencia
     public class pUsuario
     {
         public String idUsuario { get; set; }
+        public String email { get; set; }
+        public String senha { get; set; }
+
         public void adicionar(String email, String senha, String nome, String cpf, String sexo, String dataNascimento,
                             String ddd, String telefone, String cidade, String estado, String endereco, String complemento, String cep)
         {
@@ -58,6 +61,24 @@ namespace Persistencia
             while (dr.Read())
             {
                 this.idUsuario = Convert.ToString(dr["idUSuario"]);
+            }
+            dr.Close();
+
+            oConexao.fechaConexao();
+        }
+        public void verificarEmail(String email)
+        {
+            String SQL = "SELECT * FROM Usuarios WHERE email = '" + email + "'";
+
+            Conexao oConexao = new Conexao("SQLServer");
+
+            SqlDataReader dr = oConexao.executeReader(SQL);
+
+            while (dr.Read())
+            {
+                this.idUsuario = Convert.ToString(dr["idUSuario"]);
+                this.email = Convert.ToString(dr["email"]);
+                this.senha = Convert.ToString(dr["senha"]);
             }
             dr.Close();
 

@@ -11,6 +11,9 @@ namespace Negocio
     public class Usuario
     {
         public String idUsuario { get; set; }
+        public String email { get; set; }
+        public String senha { get; set; }
+
         public void adicionar(String email, String senha, String nome, String cpf, String sexo, String dataNascimento,
                             String ddd, String telefone, String cidade, String estado, String endereco, String complemento, String cep)
         {
@@ -37,6 +40,14 @@ namespace Negocio
             pUsuario objUsuario = new pUsuario();
             objUsuario.logar(email, senha);
             this.idUsuario = objUsuario.idUsuario;
+        }
+        public void verificarEmail(String email)
+        {
+            pUsuario objUsuario = new pUsuario();
+            objUsuario.verificarEmail(email);
+            this.idUsuario = objUsuario.idUsuario;
+            this.email = objUsuario.email;
+            this.senha = objUsuario.senha;
         }
     }    
 }
