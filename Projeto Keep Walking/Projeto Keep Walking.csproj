@@ -81,6 +81,7 @@
     <Content Include="frmCadRegiao.aspx" />
     <Content Include="frmCadUsuario.aspx" />
     <Content Include="frmCadVersao.aspx" />
+    <Content Include="frmEsqueciMinhaSenha.aspx" />
     <Content Include="frmListarOfertas.aspx" />
     <Content Include="frmLogUsuario.aspx" />
     <Content Include="frmMensagem.aspx" />
@@ -166,6 +167,13 @@
     </Compile>
     <Compile Include="frmCadVersao.aspx.designer.cs">
       <DependentUpon>frmCadVersao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmEsqueciMinhaSenha.aspx.cs">
+      <DependentUpon>frmEsqueciMinhaSenha.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmEsqueciMinhaSenha.aspx.designer.cs">
+      <DependentUpon>frmEsqueciMinhaSenha.aspx</DependentUpon>
     </Compile>
     <Compile Include="frmListarOfertas.aspx.cs">
       <DependentUpon>frmListarOfertas.aspx</DependentUpon>

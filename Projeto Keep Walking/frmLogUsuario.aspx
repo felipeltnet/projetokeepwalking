@@ -17,6 +17,9 @@
 &nbsp;:<asp:TextBox ID="txtSenha" runat="server" TextMode="Password"></asp:TextBox>
         <asp:Button ID="btnEntrar" runat="server" OnClick="btnEntrar_Click" Text="Entrar" />
     
+        <br />
+        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Esqueci minha senha" />
+    
     </div>
     </form>
 </body>

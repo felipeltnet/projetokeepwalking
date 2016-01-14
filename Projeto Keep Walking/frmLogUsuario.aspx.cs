@@ -29,6 +29,11 @@ namespace Projeto_Keep_Walking
             {
                 Response.Redirect(Request.RawUrl);
             }
-        }            
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("frmEsqueciMinhaSenha.aspx");
+        } 
     }
 }
