@@ -137,4 +137,60 @@ CREATE TABLE [dbo].[Regiao](
 
 GO
 
+CREATE TABLE [dbo].[Favoritos](
+	[idFavoritos] [int] IDENTITY(1,1) NOT NULL,
+	[idUsuario] [int] NOT NULL,
+	[idVeiculo] [int] NOT NULL,
+ CONSTRAINT [PK_Favoritos] PRIMARY KEY CLUSTERED 
+(
+	[idFavoritos] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
 
+GO
+
+CREATE TABLE [dbo].[Cidade](
+	[idCidade] [int] IDENTITY(1,1) NOT NULL,
+	[NomeCidade] [varchar](50) NOT NULL,
+	[idEstado] [int] NOT NULL,
+ CONSTRAINT [PK_Cidade] PRIMARY KEY CLUSTERED 
+(
+	[idCidade] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+CREATE TABLE [dbo].[Publicidade](
+	[idPublicidade] [int] IDENTITY(1,1) NOT NULL,
+	[idVeiculo] [int] NOT NULL,
+	[DataIncial] [date] NOT NULL,
+	[DataFinal] [date] NOT NULL,
+ CONSTRAINT [PK_Publicidade] PRIMARY KEY CLUSTERED 
+(
+	[idPublicidade] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+CREATE TABLE [dbo].[Veiculos](
+	[idVeiculo] [int] IDENTITY(1,1) NOT NULL,
+	[idUsuario] [int] NOT NULL,
+	[idModelo] [int] NOT NULL,
+	[idCidade] [int] NOT NULL,
+	[idOpcional] [int] NOT NULL,
+	[Versao] [varchar](50) NOT NULL,
+	[Cambio] [varchar](50) NOT NULL,
+	[motor] [varchar](50) NOT NULL,
+	[Ano] [varchar](50) NOT NULL,
+	[Valor] [float] NOT NULL,
+	[quilometragem] [int] NOT NULL,
+	[Cor] [varchar](50) NOT NULL,
+ CONSTRAINT [PK_Veiculos] PRIMARY KEY CLUSTERED 
+(
+	[idVeiculo] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
