@@ -39,12 +39,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="pCambio.cs" />
     <Compile Include="pCategoria.cs" />
     <Compile Include="Conexao.cs" />
     <Compile Include="pCidade.cs" />
-    <Compile Include="pCombustivel.cs" />
-    <Compile Include="pCores.cs" />
     <Compile Include="pEstado.cs" />
     <Compile Include="pMensagem.cs" />
     <Compile Include="pMarca.cs" />
@@ -57,7 +54,6 @@
     <Compile Include="pRegiao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="pUsuario.cs" />
-    <Compile Include="pVersao.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

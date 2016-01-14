@@ -10,7 +10,7 @@
 namespace Projeto_Keep_Walking {
     
     
-    public partial class frmCadCombustivel {
+    public partial class frmPublicidade {
         
         /// <summary>
         /// form1 control.
@@ -31,22 +31,58 @@ namespace Projeto_Keep_Walking {
         protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
-        /// txtCombustivel control.
+        /// txtDataInicial control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCombustivel;
+        protected global::System.Web.UI.WebControls.TextBox txtDataInicial;
         
         /// <summary>
-        /// lblCombustivel control.
+        /// Label2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblCombustivel;
+        protected global::System.Web.UI.WebControls.Label Label2;
+        
+        /// <summary>
+        /// txtDataFinal control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtDataFinal;
+        
+        /// <summary>
+        /// Label3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label3;
+        
+        /// <summary>
+        /// txtValor control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtValor;
+        
+        /// <summary>
+        /// lblPublicidade control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblPublicidade;
         
         /// <summary>
         /// btnAdicionar control.
@@ -58,15 +94,6 @@ namespace Projeto_Keep_Walking {
         protected global::System.Web.UI.WebControls.Button btnAdicionar;
         
         /// <summary>
-        /// btnAlterar control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAlterar;
-        
-        /// <summary>
         /// btnDeletar control.
         /// </summary>
         /// <remarks>
@@ -76,12 +103,21 @@ namespace Projeto_Keep_Walking {
         protected global::System.Web.UI.WebControls.Button btnDeletar;
         
         /// <summary>
-        /// gdvCombustivel control.
+        /// btnAlterar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gdvCombustivel;
+        protected global::System.Web.UI.WebControls.Button btnAlterar;
+        
+        /// <summary>
+        /// gdvPublicidade control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gdvPublicidade;
     }
 }

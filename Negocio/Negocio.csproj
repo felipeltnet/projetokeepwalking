@@ -39,11 +39,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cambio.cs" />
     <Compile Include="Categoria.cs" />
     <Compile Include="Cidade.cs" />
-    <Compile Include="Combustivel.cs" />
-    <Compile Include="Cores.cs" />
     <Compile Include="Estado.cs" />
     <Compile Include="Marca.cs" />
     <Compile Include="Mensagem.cs" />
@@ -56,7 +53,6 @@
     <Compile Include="Publicidade.cs" />
     <Compile Include="Regiao.cs" />
     <Compile Include="Usuario.cs" />
-    <Compile Include="Versao.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Persistencia\Persistencia.csproj">

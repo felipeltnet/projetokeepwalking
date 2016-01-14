@@ -70,18 +70,14 @@
     <Content Include="documentacao\SQL\Regiao.sql" />
     <Content Include="documentacao\SQL\Usuarios.sql" />
     <Content Include="documentacao\Comando completo.txt" />
-    <Content Include="frmCadCambio.aspx" />
     <Content Include="frmCadCategoria.aspx" />
     <Content Include="frmCadCidade.aspx" />
-    <Content Include="frmCadCombustivel.aspx" />
-    <Content Include="frmCadCores.aspx" />
     <Content Include="frmCadEstado.aspx" />
     <Content Include="frmCadMarca.aspx" />
     <Content Include="frmCadModelo.aspx" />
     <Content Include="frmCadOfertas.aspx" />
     <Content Include="frmCadRegiao.aspx" />
     <Content Include="frmCadUsuario.aspx" />
-    <Content Include="frmCadVersao.aspx" />
     <Content Include="frmListarNewsLetter.aspx" />
     <Content Include="frmListarOfertas.aspx" />
     <Content Include="frmLogUsuario.aspx" />
@@ -93,13 +89,6 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmCadCambio.aspx.cs">
-      <DependentUpon>frmCadCambio.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="frmCadCambio.aspx.designer.cs">
-      <DependentUpon>frmCadCambio.aspx</DependentUpon>
-    </Compile>
     <Compile Include="frmCadCategoria.aspx.cs">
       <DependentUpon>frmCadCategoria.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -113,20 +102,6 @@
     </Compile>
     <Compile Include="frmCadCidade.aspx.designer.cs">
       <DependentUpon>frmCadCidade.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="frmCadCombustivel.aspx.cs">
-      <DependentUpon>frmCadCombustivel.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="frmCadCombustivel.aspx.designer.cs">
-      <DependentUpon>frmCadCombustivel.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="frmCadCores.aspx.cs">
-      <DependentUpon>frmCadCores.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="frmCadCores.aspx.designer.cs">
-      <DependentUpon>frmCadCores.aspx</DependentUpon>
     </Compile>
     <Compile Include="frmCadEstado.aspx.cs">
       <DependentUpon>frmCadEstado.aspx</DependentUpon>
@@ -169,13 +144,6 @@
     </Compile>
     <Compile Include="frmCadUsuario.aspx.designer.cs">
       <DependentUpon>frmCadUsuario.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="frmCadVersao.aspx.cs">
-      <DependentUpon>frmCadVersao.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="frmCadVersao.aspx.designer.cs">
-      <DependentUpon>frmCadVersao.aspx</DependentUpon>
     </Compile>
     <Compile Include="frmListarNewsLetter.aspx.cs">
       <DependentUpon>frmListarNewsLetter.aspx</DependentUpon>
