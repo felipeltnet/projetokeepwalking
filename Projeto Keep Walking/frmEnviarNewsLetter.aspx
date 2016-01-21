@@ -14,7 +14,7 @@
 &nbsp;<asp:TextBox ID="txtEmailOrigin" runat="server"></asp:TextBox>
         <br />
         <asp:Label ID="Label2" runat="server" Text="Email Destino"></asp:Label>
-        <asp:TextBox ID="txtEmailDestino" runat="server"></asp:TextBox>
+        <asp:TextBox ID="txtEmailDestino" runat="server" OnTextChanged="txtEmailDestino_TextChanged"></asp:TextBox>
         <br />
         <asp:Label ID="Label3" runat="server" Text="Titulo Mensagem"></asp:Label>
         <asp:TextBox ID="txtTituloMensagem" runat="server"></asp:TextBox>
